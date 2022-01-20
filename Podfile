@@ -7,6 +7,7 @@ target 'OpenBankTechnicalProof' do
 
   # Pods for OpenBankTechnicalProof
   pod 'SwiftLint'
+  pod 'MaterialComponents'
 
   target 'OpenBankTechnicalProofTests' do
     inherit! :search_paths
