@@ -1,0 +1,6 @@
+framework module Pods_OpenBankTechnicalProof {
+  umbrella header "Pods-OpenBankTechnicalProof-umbrella.h"
+
+  export *
+  module * { export * }
+}
