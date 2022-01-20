@@ -20,4 +20,8 @@ class ColorsBase {
     class var darkGrayTextColor: UIColor {
         return #colorLiteral(red: 0.1882352941, green: 0.1843137255, blue: 0.1843137255, alpha: 1)
     }
+    
+    class var coloredBackgroundTextColor: UIColor {
+        return UIColor.white
+    }
 }

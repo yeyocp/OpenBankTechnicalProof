@@ -9,6 +9,18 @@ import UIKit
 
 class ThemeBase<Colors: ColorsBase, Fonts: FontsBase> {
     
+    class GeneralButtonBase {
+        class var textColor: UIColor {
+            return Colors.coloredBackgroundTextColor
+        }
+        class var backgroundColor: UIColor {
+            return Colors.darkBlueColor
+        }
+        class var textFont: UIFont {
+            return Fonts.fontBold16
+        }
+    }
+    
     class ErrorStylesBase {
         
         class var backgroundColor: UIColor {
@@ -21,10 +33,10 @@ class ThemeBase<Colors: ColorsBase, Fonts: FontsBase> {
             return Colors.darkGrayTextColor
         }
         class var titleFont: UIFont {
-            return Fonts.rubikMedium16
+            return Fonts.fontMedium16
         }
         class var textFont: UIFont {
-            return Fonts.rubikRegular14
+            return Fonts.fontRegular14
         }
     }
 }

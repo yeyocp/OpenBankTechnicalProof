@@ -12,6 +12,16 @@
 		517D3BB32799ADF70054E0B8 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BB22799ADF70054E0B8 /* ViewInterface.swift */; };
 		517D3BB52799AE030054E0B8 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BB42799AE020054E0B8 /* PresenterInterface.swift */; };
 		517D3BB72799AE0F0054E0B8 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BB62799AE0F0054E0B8 /* InteractorInterface.swift */; };
+		517D3BBE2799B8790054E0B8 /* GeneralErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BBC2799B8790054E0B8 /* GeneralErrorView.swift */; };
+		517D3BBF2799B8790054E0B8 /* GeneralErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 517D3BBD2799B8790054E0B8 /* GeneralErrorView.xib */; };
+		517D3BC32799BF2A0054E0B8 /* LocalizableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BC22799BF2A0054E0B8 /* LocalizableProtocol.swift */; };
+		517D3BC62799BF9C0054E0B8 /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BC52799BF9C0054E0B8 /* String+Localizable.swift */; };
+		517D3BC92799C0A00054E0B8 /* ThemeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BC82799C0A00054E0B8 /* ThemeBase.swift */; };
+		517D3BCB2799C0DC0054E0B8 /* ColorsBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BCA2799C0DC0054E0B8 /* ColorsBase.swift */; };
+		517D3BCE2799C0F60054E0B8 /* FontsBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BCD2799C0F60054E0B8 /* FontsBase.swift */; };
+		517D3BD12799C2FF0054E0B8 /* ThemeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BD02799C2FF0054E0B8 /* ThemeDemo.swift */; };
+		517D3BD32799C3180054E0B8 /* ColorsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BD22799C3180054E0B8 /* ColorsDemo.swift */; };
+		517D3BD52799C3220054E0B8 /* FontsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BD42799C3220054E0B8 /* FontsDemo.swift */; };
 		51A07F4F27997B820015EAFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A07F4E27997B820015EAFB /* AppDelegate.swift */; };
 		51A07F5127997B820015EAFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A07F5027997B820015EAFB /* SceneDelegate.swift */; };
 		51A07F5327997B820015EAFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A07F5227997B820015EAFB /* ViewController.swift */; };
@@ -51,6 +61,16 @@
 		517D3BB22799ADF70054E0B8 /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
 		517D3BB42799AE020054E0B8 /* PresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
 		517D3BB62799AE0F0054E0B8 /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		517D3BBC2799B8790054E0B8 /* GeneralErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralErrorView.swift; sourceTree = "<group>"; };
+		517D3BBD2799B8790054E0B8 /* GeneralErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralErrorView.xib; sourceTree = "<group>"; };
+		517D3BC22799BF2A0054E0B8 /* LocalizableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableProtocol.swift; sourceTree = "<group>"; };
+		517D3BC52799BF9C0054E0B8 /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		517D3BC82799C0A00054E0B8 /* ThemeBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeBase.swift; sourceTree = "<group>"; };
+		517D3BCA2799C0DC0054E0B8 /* ColorsBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsBase.swift; sourceTree = "<group>"; };
+		517D3BCD2799C0F60054E0B8 /* FontsBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsBase.swift; sourceTree = "<group>"; };
+		517D3BD02799C2FF0054E0B8 /* ThemeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeDemo.swift; sourceTree = "<group>"; };
+		517D3BD22799C3180054E0B8 /* ColorsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDemo.swift; sourceTree = "<group>"; };
+		517D3BD42799C3220054E0B8 /* FontsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsDemo.swift; sourceTree = "<group>"; };
 		51A07F4B27997B820015EAFB /* OpenBankTechnicalProof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenBankTechnicalProof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A07F4E27997B820015EAFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51A07F5027997B820015EAFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +150,9 @@
 		517D3BAD2799ADB90054E0B8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				517D3BC42799BF870054E0B8 /* Extensions */,
+				517D3BC72799C0890054E0B8 /* Theme */,
+				517D3BB82799B8200054E0B8 /* Views */,
 				517D3BAE2799ADC60054E0B8 /* VIPER */,
 			);
 			path = Common;
@@ -144,6 +167,76 @@
 				517D3BB62799AE0F0054E0B8 /* InteractorInterface.swift */,
 			);
 			path = VIPER;
+			sourceTree = "<group>";
+		};
+		517D3BB82799B8200054E0B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				517D3BB92799B8300054E0B8 /* GeneralError */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		517D3BB92799B8300054E0B8 /* GeneralError */ = {
+			isa = PBXGroup;
+			children = (
+				517D3BBC2799B8790054E0B8 /* GeneralErrorView.swift */,
+				517D3BBD2799B8790054E0B8 /* GeneralErrorView.xib */,
+			);
+			path = GeneralError;
+			sourceTree = "<group>";
+		};
+		517D3BC02799BF080054E0B8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				517D3BC12799BF130054E0B8 /* Protocols */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		517D3BC12799BF130054E0B8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				517D3BC22799BF2A0054E0B8 /* LocalizableProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		517D3BC42799BF870054E0B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				517D3BC52799BF9C0054E0B8 /* String+Localizable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		517D3BC72799C0890054E0B8 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				517D3BCC2799C0E20054E0B8 /* Base */,
+				517D3BCF2799C2EB0054E0B8 /* ThemeDemo */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		517D3BCC2799C0E20054E0B8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				517D3BC82799C0A00054E0B8 /* ThemeBase.swift */,
+				517D3BCA2799C0DC0054E0B8 /* ColorsBase.swift */,
+				517D3BCD2799C0F60054E0B8 /* FontsBase.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		517D3BCF2799C2EB0054E0B8 /* ThemeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				517D3BD02799C2FF0054E0B8 /* ThemeDemo.swift */,
+				517D3BD22799C3180054E0B8 /* ColorsDemo.swift */,
+				517D3BD42799C3220054E0B8 /* FontsDemo.swift */,
+			);
+			path = ThemeDemo;
 			sourceTree = "<group>";
 		};
 		51A07F4227997B820015EAFB = {
@@ -174,6 +267,7 @@
 				517D3BA92799A9F90054E0B8 /* Application */,
 				517D3BAD2799ADB90054E0B8 /* Common */,
 				517D3BAC2799AB0D0054E0B8 /* Modules */,
+				517D3BC02799BF080054E0B8 /* Utils */,
 				51A07F5727997B850015EAFB /* Assets.xcassets */,
 				51A07F5927997B850015EAFB /* LaunchScreen.storyboard */,
 				51A07F5C27997B850015EAFB /* Info.plist */,
@@ -223,6 +317,7 @@
 				51A07F4827997B820015EAFB /* Frameworks */,
 				51A07F4927997B820015EAFB /* Resources */,
 				5126FCED2799818E002A768B /* SwifLint Script */,
+				FD5F613D7DDD5FEB8C368AD3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +355,7 @@
 				51A07F6727997B860015EAFB /* Sources */,
 				51A07F6827997B860015EAFB /* Frameworks */,
 				51A07F6927997B860015EAFB /* Resources */,
+				B1B6B056648E0C6E755D4DFE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51A07F5B27997B850015EAFB /* LaunchScreen.storyboard in Resources */,
+				517D3BBF2799B8790054E0B8 /* GeneralErrorView.xib in Resources */,
 				51A07F5827997B850015EAFB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +500,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B1B6B056648E0C6E755D4DFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests/Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests/Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests/Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EE3F4EFFCA6AA9173DCDD859 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,6 +539,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FD5F613D7DDD5FEB8C368AD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenBankTechnicalProof/Pods-OpenBankTechnicalProof-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenBankTechnicalProof/Pods-OpenBankTechnicalProof-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenBankTechnicalProof/Pods-OpenBankTechnicalProof-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -432,14 +563,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517D3BD12799C2FF0054E0B8 /* ThemeDemo.swift in Sources */,
 				517D3BB72799AE0F0054E0B8 /* InteractorInterface.swift in Sources */,
+				517D3BD32799C3180054E0B8 /* ColorsDemo.swift in Sources */,
 				51A07F5327997B820015EAFB /* ViewController.swift in Sources */,
+				517D3BC32799BF2A0054E0B8 /* LocalizableProtocol.swift in Sources */,
 				51A07F4F27997B820015EAFB /* AppDelegate.swift in Sources */,
+				517D3BD52799C3220054E0B8 /* FontsDemo.swift in Sources */,
+				517D3BC62799BF9C0054E0B8 /* String+Localizable.swift in Sources */,
 				517D3BAB2799AA1A0054E0B8 /* AppDefines.swift in Sources */,
 				51A07F5127997B820015EAFB /* SceneDelegate.swift in Sources */,
+				517D3BBE2799B8790054E0B8 /* GeneralErrorView.swift in Sources */,
+				517D3BC92799C0A00054E0B8 /* ThemeBase.swift in Sources */,
+				517D3BCE2799C0F60054E0B8 /* FontsBase.swift in Sources */,
 				517D3BB32799ADF70054E0B8 /* ViewInterface.swift in Sources */,
 				517D3BB02799ADE00054E0B8 /* RouterInterface.swift in Sources */,
 				517D3BB52799AE030054E0B8 /* PresenterInterface.swift in Sources */,
+				517D3BCB2799C0DC0054E0B8 /* ColorsBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

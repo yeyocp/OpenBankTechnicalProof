@@ -16,4 +16,6 @@ class ThemeDemo: ThemeBase<ColorsDemo, FontsDemo> {
         //    return ColorsDemo.darkBlueColor
         //}
     }
+    
+    class GeneralButton: GeneralButtonBase {}
 }

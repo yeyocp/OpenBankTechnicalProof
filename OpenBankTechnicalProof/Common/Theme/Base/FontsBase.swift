@@ -9,40 +9,40 @@ import UIKit
 
 class FontsBase {
     
-    class var rubikRegular12: UIFont {
-        return UIFont(name: "Rubik-Regular", size: 12.0)!
+    class var fontRegular12: UIFont {
+        return UIFont.systemFont(ofSize: 12, weight: .regular)
     }
-    class var rubikRegular14: UIFont {
-        return UIFont(name: "Rubik-Regular", size: 14.0)!
+    class var fontRegular14: UIFont {
+        return UIFont.systemFont(ofSize: 14, weight: .regular)
     }
-    class var rubikRegular16: UIFont {
-        return UIFont(name: "Rubik-Regular", size: 16.0)!
+    class var fontRegular16: UIFont {
+        return UIFont.systemFont(ofSize: 16, weight: .regular)
     }
-    class var rubikRegular18: UIFont {
-        return UIFont(name: "Rubik-Regular", size: 18.0)!
+    class var fontRegular18: UIFont {
+        return UIFont.systemFont(ofSize: 18, weight: .regular)
     }
-    class var rubikMedium12: UIFont {
-        return UIFont(name: "Rubik-Medium", size: 12.0)!
+    class var fontMedium12: UIFont {
+        return UIFont.systemFont(ofSize: 12, weight: .medium)
     }
-    class var rubikMedium14: UIFont {
-        return UIFont(name: "Rubik-Medium", size: 14.0)!
+    class var fontMedium14: UIFont {
+        return UIFont.systemFont(ofSize: 14, weight: .medium)
     }
-    class var rubikMedium16: UIFont {
-        return UIFont(name: "Rubik-Medium", size: 16.0)!
+    class var fontMedium16: UIFont {
+        return UIFont.systemFont(ofSize: 16, weight: .medium)
     }
-    class var rubikMedium18: UIFont {
-        return UIFont(name: "Rubik-Medium", size: 18.0)!
+    class var fontMedium18: UIFont {
+        return UIFont.systemFont(ofSize: 18, weight: .medium)
     }
-    class var rubikBold12: UIFont {
-        return UIFont(name: "Rubik-Bold", size: 12)!
+    class var fontBold12: UIFont {
+        return UIFont.systemFont(ofSize: 12, weight: .bold)
     }
-    class var rubikBold14: UIFont {
-        return UIFont(name: "Rubik-Bold", size: 14)!
+    class var fontBold14: UIFont {
+        return UIFont.systemFont(ofSize: 14, weight: .bold)
     }
-    class var rubikBold16: UIFont {
-        return UIFont(name: "Rubik-Bold", size: 16)!
+    class var fontBold16: UIFont {
+        return UIFont.systemFont(ofSize: 16, weight: .bold)
     }
-    class var rubikBold18: UIFont {
-        return UIFont(name: "Rubik-Bold", size: 18)!
+    class var fontBold18: UIFont {
+        return UIFont.systemFont(ofSize: 18, weight: .bold)
     }
 }
