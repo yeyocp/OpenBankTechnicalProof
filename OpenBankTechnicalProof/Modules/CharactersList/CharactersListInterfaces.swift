@@ -13,11 +13,11 @@ protocol CharactersListRouterInterface: RouterInterface {
 
 protocol CharactersListViewInterface: ViewInterface {
     var presenter: CharactersListViewDelegateInterface? { get set }
-    var marvelCharactersList: CharactersListViewModel? { get }
+    var marvelCharactersList: [CharactersListItemViewModel?] { get }
     
     func didCharactersFinish(_ charactersViewModel: [CharactersListItemViewModel?])
     
-    func loadCharactersList(charactersList: CharactersListViewModel)
+    func loadCharactersList(charactersList: [CharactersListItemViewModel?])
 }
 
 protocol CharactersListViewDelegateInterface: PresenterInterface {
@@ -38,6 +38,6 @@ protocol CharactersListInteractorInterface: InputInteractorInterface {
 }
 
 protocol CharactersListOutputInteractorInterface: OutputInteractorInterface {
-    func onCharactersListSucceed(charactersListVM: CharactersListViewModel)
+    func onCharactersListSucceed(charactersListVM: [CharactersListItemViewModel?])
     func onCharactersListFailed()
 }
