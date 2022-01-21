@@ -48,9 +48,9 @@ extension GeneralErrorView: LocalizableProtocol {
     }
     
     func localizableString() {
-        errorTitle.text = LocalizableConstants.errorTitle.localizable()
-        errorDescriptionTextView.text = LocalizableConstants.errorDescription.localizable()
-        errorButton.setTitle(LocalizableConstants.errorButton.localizable(), for: .normal)
+        errorTitle.text = LocalizableConstants.errorTitle.localized()
+        errorDescriptionTextView.text = LocalizableConstants.errorDescription.localized()
+        errorButton.setTitle(LocalizableConstants.errorButton.localized(), for: .normal)
         errorButton.isUppercaseTitle = false
     }
 }
@@ -60,16 +60,16 @@ extension GeneralErrorView: LocalizableProtocol {
 extension GeneralErrorView {
     
     private func setupView() {
-        self.view.backgroundColor = ThemeDemo.ErrorStyles.backgroundColor
-        errorButton.setTitleColor(ThemeDemo.GeneralButton.textColor, for: .normal)
-        errorButton.backgroundColor = ThemeDemo.GeneralButton.backgroundColor
-        errorButton.titleLabel?.font = ThemeDemo.GeneralButton.textFont
+        self.view.backgroundColor = .white
+        errorButton.setTitleColor(.white, for: .normal)
+        errorButton.backgroundColor = #colorLiteral(red: 0.1568627451, green: 0.2274509804, blue: 0.6784313725, alpha: 1)
+        errorButton.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
         errorButton.titleLabel?.numberOfLines = 1
         errorButton.titleLabel?.adjustsFontSizeToFitWidth = true
         errorButton.titleLabel?.lineBreakMode = NSLineBreakMode.byClipping
-        errorTitle.font = ThemeDemo.ErrorStyles.titleFont
-        errorTitle.textColor = ThemeDemo.ErrorStyles.titleColor
-        errorDescriptionTextView.font = ThemeDemo.ErrorStyles.textFont
-        errorDescriptionTextView.textColor = ThemeDemo.ErrorStyles.textColor
+        errorTitle.font = .systemFont(ofSize: 16, weight: .medium)
+        errorTitle.textColor = #colorLiteral(red: 0.1568627451, green: 0.2274509804, blue: 0.6784313725, alpha: 1)
+        errorDescriptionTextView.font = .systemFont(ofSize: 14, weight: .regular)
+        errorDescriptionTextView.textColor = #colorLiteral(red: 0.1882352941, green: 0.1843137255, blue: 0.1843137255, alpha: 1)
     }
 }

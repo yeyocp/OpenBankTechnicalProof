@@ -14,4 +14,4 @@ protocol InputInteractorInterface {}
 
 // MARK: - Base Output Interactor Interface -
 
-protocol OutputInteractorInterface: class {}
+protocol OutputInteractorInterface: AnyObject {}
