@@ -10,6 +10,7 @@
 		51058965279ABAAF00B05895 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51058964279ABAAF00B05895 /* BaseViewController.swift */; };
 		51058967279ABAB500B05895 /* BaseViewControllerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51058966279ABAB500B05895 /* BaseViewControllerInterface.swift */; };
 		51058969279ABD6C00B05895 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51058968279ABD6C00B05895 /* UINavigationController+Extensions.swift */; };
+		5105896B279AC43900B05895 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5105896A279AC43900B05895 /* UIColor+Extensions.swift */; };
 		517D3BAB2799AA1A0054E0B8 /* AppDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BAA2799AA1A0054E0B8 /* AppDefines.swift */; };
 		517D3BB02799ADE00054E0B8 /* RouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BAF2799ADE00054E0B8 /* RouterInterface.swift */; };
 		517D3BB32799ADF70054E0B8 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BB22799ADF70054E0B8 /* ViewInterface.swift */; };
@@ -56,6 +57,7 @@
 		51058964279ABAAF00B05895 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		51058966279ABAB500B05895 /* BaseViewControllerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerInterface.swift; sourceTree = "<group>"; };
 		51058968279ABD6C00B05895 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		5105896A279AC43900B05895 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		517D3BAA2799AA1A0054E0B8 /* AppDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefines.swift; sourceTree = "<group>"; };
 		517D3BAF2799ADE00054E0B8 /* RouterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInterface.swift; sourceTree = "<group>"; };
 		517D3BB22799ADF70054E0B8 /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				517D3BC52799BF9C0054E0B8 /* String+Localizable.swift */,
 				51058968279ABD6C00B05895 /* UINavigationController+Extensions.swift */,
+				5105896A279AC43900B05895 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				517D3BB72799AE0F0054E0B8 /* InteractorInterface.swift in Sources */,
+				5105896B279AC43900B05895 /* UIColor+Extensions.swift in Sources */,
 				51058969279ABD6C00B05895 /* UINavigationController+Extensions.swift in Sources */,
 				51A07F5327997B820015EAFB /* ViewController.swift in Sources */,
 				517D3BC32799BF2A0054E0B8 /* LocalizableProtocol.swift in Sources */,
