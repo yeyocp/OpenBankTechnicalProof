@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Base Wireframe Interface -
 
-protocol WireframeInterface: GeneralErrorViewButtonDelegate {
+protocol RouterInterface: GeneralErrorViewButtonDelegate {
     
     // MARK: - REQUIRED -
     
@@ -28,7 +28,7 @@ protocol GeneralErrorViewButtonDelegate: AnyObject {
 
 // MARK: - Base Wireframe Interface Default Implementation -
 
-extension WireframeInterface {
+extension RouterInterface {
     
     // MARK: - CONVENIENCE INIT -
     
