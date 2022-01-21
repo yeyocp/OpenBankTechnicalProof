@@ -61,7 +61,7 @@ class BaseViewController: UIViewController, BaseViewControllerInterface {
             print("reachable")
             self.hideNoInternetScreen()
         }
-        reachability?.whenUnreachable = {  _ in
+        reachability?.whenUnreachable = { _ in
              print("unreachable")
              self.showNoInternetScreen()
         }

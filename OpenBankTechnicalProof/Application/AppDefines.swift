@@ -5,5 +5,5 @@
 //  Created by Sergio Castaño Panchuelo on 20/1/22.
 //
 
-let marvelListViewControllerIdentifier = "MarvelListViewController"
-let marvelDetailViewControllerIdentifier = "MarvelDetailViewController"
+let marvelCharactersListViewController = "MarvelCharactersListViewController"
+let marvelCharacterDetailViewController = "MarvelCharacterDetailViewController"

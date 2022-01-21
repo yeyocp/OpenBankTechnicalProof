@@ -31,6 +31,9 @@
 		51A07F7227997B860015EAFB /* OpenBankTechnicalProofUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A07F7127997B860015EAFB /* OpenBankTechnicalProofUITestsLaunchTests.swift */; };
 		51C1E7C6279AD13600A50FB7 /* NoInternetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C1E7C4279AD13600A50FB7 /* NoInternetController.xib */; };
 		51C1E7C7279AD13600A50FB7 /* NoInternetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7C5279AD13600A50FB7 /* NoInternetController.swift */; };
+		51C1E7CB279AD40600A50FB7 /* MarvelCharactersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7CA279AD40600A50FB7 /* MarvelCharactersListViewModel.swift */; };
+		51C1E7CF279ADBB700A50FB7 /* MarvelCharactersDomainModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7CE279ADBB700A50FB7 /* MarvelCharactersDomainModelResponse.swift */; };
+		51C1E7D1279ADF4600A50FB7 /* NetworkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7D0279ADF4600A50FB7 /* NetworkParser.swift */; };
 		60C9FDD40550901C797C4013 /* Pods_OpenBankTechnicalProofTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6C46EDC620885800D72BDD /* Pods_OpenBankTechnicalProofTests.framework */; };
 		7B0EC61B60723C78100A619E /* Pods_OpenBankTechnicalProof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E514DC5E8903137A4799127A /* Pods_OpenBankTechnicalProof.framework */; };
 		AD7D266797A488B64C39B266 /* Pods_OpenBankTechnicalProof_OpenBankTechnicalProofUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBDF850D869CEF1D86D4E0E /* Pods_OpenBankTechnicalProof_OpenBankTechnicalProofUITests.framework */; };
@@ -85,6 +88,9 @@
 		51A07F7127997B860015EAFB /* OpenBankTechnicalProofUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBankTechnicalProofUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		51C1E7C4279AD13600A50FB7 /* NoInternetController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoInternetController.xib; sourceTree = "<group>"; };
 		51C1E7C5279AD13600A50FB7 /* NoInternetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetController.swift; sourceTree = "<group>"; };
+		51C1E7CA279AD40600A50FB7 /* MarvelCharactersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharactersListViewModel.swift; sourceTree = "<group>"; };
+		51C1E7CE279ADBB700A50FB7 /* MarvelCharactersDomainModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharactersDomainModelResponse.swift; sourceTree = "<group>"; };
+		51C1E7D0279ADF4600A50FB7 /* NetworkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkParser.swift; sourceTree = "<group>"; };
 		717E6FBF329B49F7264CA50D /* Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests/Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7CBDF850D869CEF1D86D4E0E /* Pods_OpenBankTechnicalProof_OpenBankTechnicalProofUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankTechnicalProof_OpenBankTechnicalProofUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E514DC5E8903137A4799127A /* Pods_OpenBankTechnicalProof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankTechnicalProof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				51058963279ABA8B00B05895 /* Common */,
+				51C1E7C8279AD37100A50FB7 /* MarvelCharactersList */,
 				51A07F5227997B820015EAFB /* ViewController.swift */,
 			);
 			path = Modules;
@@ -219,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				517D3BC22799BF2A0054E0B8 /* LocalizableProtocol.swift */,
+				51C1E7D0279ADF4600A50FB7 /* NetworkParser.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -261,11 +269,12 @@
 			children = (
 				517D3BA92799A9F90054E0B8 /* Application */,
 				517D3BAD2799ADB90054E0B8 /* Common */,
+				51C1E7CC279ADB5900A50FB7 /* Domains */,
 				517D3BAC2799AB0D0054E0B8 /* Modules */,
 				517D3BC02799BF080054E0B8 /* Utils */,
 				51A07F5727997B850015EAFB /* Assets.xcassets */,
-				51A07F5927997B850015EAFB /* LaunchScreen.storyboard */,
 				51A07F5C27997B850015EAFB /* Info.plist */,
+				51A07F5927997B850015EAFB /* LaunchScreen.storyboard */,
 			);
 			path = OpenBankTechnicalProof;
 			sourceTree = "<group>";
@@ -285,6 +294,38 @@
 				51A07F7127997B860015EAFB /* OpenBankTechnicalProofUITestsLaunchTests.swift */,
 			);
 			path = OpenBankTechnicalProofUITests;
+			sourceTree = "<group>";
+		};
+		51C1E7C8279AD37100A50FB7 /* MarvelCharactersList */ = {
+			isa = PBXGroup;
+			children = (
+				51C1E7C9279AD3E600A50FB7 /* ViewModels */,
+			);
+			path = MarvelCharactersList;
+			sourceTree = "<group>";
+		};
+		51C1E7C9279AD3E600A50FB7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				51C1E7CA279AD40600A50FB7 /* MarvelCharactersListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		51C1E7CC279ADB5900A50FB7 /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				51C1E7CD279ADB8C00A50FB7 /* MarvelCharacters */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		51C1E7CD279ADB8C00A50FB7 /* MarvelCharacters */ = {
+			isa = PBXGroup;
+			children = (
+				51C1E7CE279ADBB700A50FB7 /* MarvelCharactersDomainModelResponse.swift */,
+			);
+			path = MarvelCharacters;
 			sourceTree = "<group>";
 		};
 		FEEC29CBE6E8345CF82F1E2D /* Pods */ = {
@@ -564,12 +605,15 @@
 				51058969279ABD6C00B05895 /* UINavigationController+Extensions.swift in Sources */,
 				51A07F5327997B820015EAFB /* ViewController.swift in Sources */,
 				517D3BC32799BF2A0054E0B8 /* LocalizableProtocol.swift in Sources */,
+				51C1E7D1279ADF4600A50FB7 /* NetworkParser.swift in Sources */,
 				51058965279ABAAF00B05895 /* BaseViewController.swift in Sources */,
 				51A07F4F27997B820015EAFB /* AppDelegate.swift in Sources */,
+				51C1E7CF279ADBB700A50FB7 /* MarvelCharactersDomainModelResponse.swift in Sources */,
 				517D3BC62799BF9C0054E0B8 /* String+Localizable.swift in Sources */,
 				51058967279ABAB500B05895 /* BaseViewControllerInterface.swift in Sources */,
 				517D3BAB2799AA1A0054E0B8 /* AppDefines.swift in Sources */,
 				51A07F5127997B820015EAFB /* SceneDelegate.swift in Sources */,
+				51C1E7CB279AD40600A50FB7 /* MarvelCharactersListViewModel.swift in Sources */,
 				517D3BBE2799B8790054E0B8 /* GeneralErrorView.swift in Sources */,
 				5105896D279AC57600B05895 /* UIViewController+Extensions.swift in Sources */,
 				517D3BB32799ADF70054E0B8 /* ViewInterface.swift in Sources */,
