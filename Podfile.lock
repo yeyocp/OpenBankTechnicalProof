@@ -644,10 +644,12 @@ PODS:
   - MotionAnimator (4.0.1):
     - MotionInterchange (~> 3.0)
   - MotionInterchange (3.0.0)
+  - ReachabilitySwift (5.0.0)
   - SwiftLint (0.45.1)
 
 DEPENDENCIES:
   - MaterialComponents
+  - ReachabilitySwift
   - SwiftLint
 
 SPEC REPOS:
@@ -657,6 +659,7 @@ SPEC REPOS:
     - MDFTextAccessibility
     - MotionAnimator
     - MotionInterchange
+    - ReachabilitySwift
     - SwiftLint
 
 SPEC CHECKSUMS:
@@ -665,8 +668,9 @@ SPEC CHECKSUMS:
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
   MotionAnimator: 5f99d7c9592928c0f28a66283eda9c3b657dc480
   MotionInterchange: 13adae439b377e31d1674cc165539d50e1d1566a
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   SwiftLint: 06ac37e4d38c7068e0935bb30cda95f093bec761
 
-PODFILE CHECKSUM: 6fcf916391c79949408914ffc8970fd1c79319ff
+PODFILE CHECKSUM: 651623fc56b75abbea6629bdaae73e062a948b96
 
 COCOAPODS: 1.11.2
