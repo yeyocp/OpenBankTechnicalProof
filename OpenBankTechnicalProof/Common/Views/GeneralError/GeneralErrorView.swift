@@ -67,7 +67,6 @@ extension GeneralErrorView {
         errorButton.titleLabel?.numberOfLines = 1
         errorButton.titleLabel?.adjustsFontSizeToFitWidth = true
         errorButton.titleLabel?.lineBreakMode = NSLineBreakMode.byClipping
-        errorButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         errorTitle.font = ThemeDemo.ErrorStyles.titleFont
         errorTitle.textColor = ThemeDemo.ErrorStyles.titleColor
         errorDescriptionTextView.font = ThemeDemo.ErrorStyles.textFont

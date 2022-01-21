@@ -58,7 +58,7 @@ extension WireframeInterface {
             let vc = GeneralErrorView(nibName: "GeneralErrorView", bundle: nil)
             
             vc.generalErrorButtonDelegate = self
-            vc.modalPresentation = UIModalPresentationStyle.fullScreen
+            vc.modalPresentationStyle = .fullScreen
             vc.shouldReturn = shouldReturn
             fromVC.present(vc, animated: false, completion: nil)
         }
