@@ -7,6 +7,12 @@
 
 import UIKit
 
+// MARK: - Constants -
+
+private struct Constants {
+    static let noInternetControllerName = "NoInternetController"
+}
+
 extension UIViewController {
     
     // MARK: - Internet Connection -

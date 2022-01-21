@@ -29,6 +29,8 @@
 		51A07F6627997B860015EAFB /* OpenBankTechnicalProofTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A07F6527997B860015EAFB /* OpenBankTechnicalProofTests.swift */; };
 		51A07F7027997B860015EAFB /* OpenBankTechnicalProofUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A07F6F27997B860015EAFB /* OpenBankTechnicalProofUITests.swift */; };
 		51A07F7227997B860015EAFB /* OpenBankTechnicalProofUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A07F7127997B860015EAFB /* OpenBankTechnicalProofUITestsLaunchTests.swift */; };
+		51C1E7C6279AD13600A50FB7 /* NoInternetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C1E7C4279AD13600A50FB7 /* NoInternetController.xib */; };
+		51C1E7C7279AD13600A50FB7 /* NoInternetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7C5279AD13600A50FB7 /* NoInternetController.swift */; };
 		60C9FDD40550901C797C4013 /* Pods_OpenBankTechnicalProofTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6C46EDC620885800D72BDD /* Pods_OpenBankTechnicalProofTests.framework */; };
 		7B0EC61B60723C78100A619E /* Pods_OpenBankTechnicalProof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E514DC5E8903137A4799127A /* Pods_OpenBankTechnicalProof.framework */; };
 		AD7D266797A488B64C39B266 /* Pods_OpenBankTechnicalProof_OpenBankTechnicalProofUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBDF850D869CEF1D86D4E0E /* Pods_OpenBankTechnicalProof_OpenBankTechnicalProofUITests.framework */; };
@@ -81,6 +83,8 @@
 		51A07F6B27997B860015EAFB /* OpenBankTechnicalProofUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenBankTechnicalProofUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A07F6F27997B860015EAFB /* OpenBankTechnicalProofUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBankTechnicalProofUITests.swift; sourceTree = "<group>"; };
 		51A07F7127997B860015EAFB /* OpenBankTechnicalProofUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBankTechnicalProofUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		51C1E7C4279AD13600A50FB7 /* NoInternetController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoInternetController.xib; sourceTree = "<group>"; };
+		51C1E7C5279AD13600A50FB7 /* NoInternetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetController.swift; sourceTree = "<group>"; };
 		717E6FBF329B49F7264CA50D /* Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests/Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7CBDF850D869CEF1D86D4E0E /* Pods_OpenBankTechnicalProof_OpenBankTechnicalProofUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankTechnicalProof_OpenBankTechnicalProofUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E514DC5E8903137A4799127A /* Pods_OpenBankTechnicalProof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankTechnicalProof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +140,15 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		5105896E279AC5D700B05895 /* NoInternetController */ = {
+			isa = PBXGroup;
+			children = (
+				51C1E7C5279AD13600A50FB7 /* NoInternetController.swift */,
+				51C1E7C4279AD13600A50FB7 /* NoInternetController.xib */,
+			);
+			path = NoInternetController;
+			sourceTree = "<group>";
+		};
 		517D3BA92799A9F90054E0B8 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				517D3BB92799B8300054E0B8 /* GeneralError */,
+				5105896E279AC5D700B05895 /* NoInternetController */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -399,6 +413,7 @@
 				51A07F5B27997B850015EAFB /* LaunchScreen.storyboard in Resources */,
 				517D3BBF2799B8790054E0B8 /* GeneralErrorView.xib in Resources */,
 				51A07F5827997B850015EAFB /* Assets.xcassets in Resources */,
+				51C1E7C6279AD13600A50FB7 /* NoInternetController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +573,7 @@
 				517D3BBE2799B8790054E0B8 /* GeneralErrorView.swift in Sources */,
 				5105896D279AC57600B05895 /* UIViewController+Extensions.swift in Sources */,
 				517D3BB32799ADF70054E0B8 /* ViewInterface.swift in Sources */,
+				51C1E7C7279AD13600A50FB7 /* NoInternetController.swift in Sources */,
 				517D3BB02799ADE00054E0B8 /* RouterInterface.swift in Sources */,
 				517D3BB52799AE030054E0B8 /* PresenterInterface.swift in Sources */,
 			);

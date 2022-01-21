@@ -24,7 +24,7 @@ class BaseViewController: UIViewController, BaseViewControllerInterface {
         return .lightContent
     }
     
-    // MARK: - Lifecycle -
+    // MARK: - View Lifecycle -
     
     override func viewDidLoad() {
         super.viewDidLoad()
