@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CharactersListRouterInterface: RouterInterface {
-    func navigateToProjectDetail(vm: CharactersListItemViewModel)
+    func navigateToCharacterDetail(character: CharactersListItemViewModel)
 }
 
 protocol CharactersListViewInterface: ViewInterface {
