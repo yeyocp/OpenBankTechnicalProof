@@ -14,4 +14,22 @@ final class CharactersManagementService {
     init(networkManager: NetworkManagerProtocol = NetworkAPIClient.shared()) {
         self.networkManager = networkManager
     }
+    
+    func getCharacters(success: @escaping ([CharacterItemDomainModel]) -> Void,
+                       failure: @escaping FailureCompletion) {
+        
+        let getCharactersListFormat = String(format: ServiceConstants.charactersListPath, ServiceConstants.marvelApiKey)
+        let networkBuilder = NetworkManagerBuilder(urlString: getCharactersListFormat,
+                                                   httpMethod: .GET,
+                                                   parameters: nil )
+        
+        networkManager.execute(serviceRequest: networkBuilder) { (result: Result<CharactersDomainModelResponse>) in
+            switch result {
+            case .success(let charactersDomainModelResponse):
+                success(charactersDomainModelResponse.data.characters)
+            case .failure(let error, let statusCode):
+                failure(error, self.networkManager.handleAPIErrors(statusCode: statusCode))
+            }
+        }
+    }
 }

@@ -10,6 +10,11 @@ import Alamofire
 
 typealias FailureCompletion = (Error?, APIErrorType) -> Void
 
+public enum Result<T> {
+    case success(T)
+    case failure(Error, Int?)
+}
+
 enum HttpMethod: Int {
     case GET, POST, PUT, DELETE
     
@@ -28,27 +33,30 @@ enum HttpMethod: Int {
 }
 
 protocol NetworkManagerRequestProtocol {
-    var path: String { get set }
+    var urlString: String { get set }
     var httpMethod: HttpMethod { get set }
     var parameters: [String: Any]? { get set }
 }
 
 protocol NetworkManagerProtocol {
     func execute<T: NetworkParser>(serviceRequest: NetworkManagerRequestProtocol,
-                                   alternativeBaseURL: String?,
-                                   encoding: ParameterEncoding?,
-                                   completion: @escaping (Result<T, FailureCompletion>) -> Void)
+                                   completion: @escaping (Result<T>) -> Void)
+    
+    func handleAPIErrors(statusCode: Int?) -> APIErrorType
 }
 
 extension NetworkManagerProtocol {
     func execute<T: NetworkParser>(serviceRequest: NetworkManagerRequestProtocol,
-                                   alternativeBaseURL: String?,
-                                   encoding: ParameterEncoding?,
-                                   completion: @escaping (Result<T, FailureCompletion>) -> Void) {
-        
+                                   completion: @escaping (Result<T>) -> Void) {
         return execute(serviceRequest: serviceRequest,
-                       alternativeBaseURL: alternativeBaseURL,
-                       encoding: encoding,
                        completion: completion)
+    }
+    
+    func handleAPIErrors(statusCode: Int?) -> APIErrorType {
+        guard let statusCode = statusCode else {
+            return APIErrorType.generalServiceError
+        }
+        
+        return StatusCodes.apiErrorType(statusCode)
     }
 }

@@ -23,11 +23,11 @@ final class CharactersListInteractor: CharactersListInteractorInterface {
     // MARK: - Internal Methods -
     
     func fetchCharactersList() {
-        charactersManagementService.getMarvelCharacters(success: { charactersList in
+        charactersManagementService.getCharacters(success: { charactersList in
             self.presenter?.onCharactersListSucceed(charactersListDomain: charactersList)
-        }, failure: { _, _ in
+        }) { _, _ in
             self.presenter?.onCharactersListFailed()
-        })
+        }
     }
     
     
