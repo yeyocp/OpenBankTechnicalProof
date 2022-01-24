@@ -57,6 +57,8 @@ extension CharactersListViewController {
     }
 }
 
+// MARK: - View Interface -
+
 extension CharactersListViewController: CharactersListViewInterface {
     
     func didCharactersFinish(_ charactersViewModel: [CharactersListItemViewModel?]) {

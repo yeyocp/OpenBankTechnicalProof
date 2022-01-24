@@ -7,23 +7,37 @@
 
 import UIKit
 
-class CharacterDetailViewController: UIViewController {
+class CharacterDetailViewController: BaseViewController {
 
+    // MARK: - IBOutlets -
+    
+    // MARK: - Properties -
+    
+    var presenter: CharacterDetailViewDelegateInterface?
+    var characterDetail: CharacterDetailViewModel?
+    
+    // MARK: - Lifecycle -
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.initViews()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: - Private Methods -
+    
+    private func initViews() {
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
-    */
+}
 
+// MARK: - View Interface -
+
+extension CharacterDetailViewController: CharacterDetailViewInterface {
+    
+    func didCharacterDetailFinish(_ characterDetailViewModel: CharacterDetailViewModel?) {
+        self.characterDetail = characterDetailViewModel
+        
+        // TODO: Fill in data
+    }
 }

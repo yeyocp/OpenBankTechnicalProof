@@ -50,7 +50,6 @@ extension GeneralErrorView: LocalizableProtocol {
         errorTitle.text = LocalizableConstants.errorTitle.localized()
         errorDescriptionTextView.text = LocalizableConstants.errorDescription.localized()
         errorButton.setTitle(LocalizableConstants.errorButton.localized(), for: .normal)
-        errorButton.isUppercaseTitle = false
     }
 }
 
