@@ -29,6 +29,7 @@
 		5177A2FE279EC2B80009D6FA /* NetworkManagerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2FD279EC2B80009D6FA /* NetworkManagerBuilder.swift */; };
 		5177A302279ECA6B0009D6FA /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A301279ECA6B0009D6FA /* String+Extension.swift */; };
 		5177A309279F15C10009D6FA /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A308279F15C10009D6FA /* CharacterDetailViewModel.swift */; };
+		5177A30B279F16650009D6FA /* CharacterDetailInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A30A279F16650009D6FA /* CharacterDetailInterfaces.swift */; };
 		517D3BAB2799AA1A0054E0B8 /* AppDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BAA2799AA1A0054E0B8 /* AppDefines.swift */; };
 		517D3BB02799ADE00054E0B8 /* RouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BAF2799ADE00054E0B8 /* RouterInterface.swift */; };
 		517D3BB32799ADF70054E0B8 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BB22799ADF70054E0B8 /* ViewInterface.swift */; };
@@ -101,6 +102,7 @@
 		5177A2FD279EC2B80009D6FA /* NetworkManagerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerBuilder.swift; sourceTree = "<group>"; };
 		5177A301279ECA6B0009D6FA /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		5177A308279F15C10009D6FA /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
+		5177A30A279F16650009D6FA /* CharacterDetailInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailInterfaces.swift; sourceTree = "<group>"; };
 		517D3BAA2799AA1A0054E0B8 /* AppDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefines.swift; sourceTree = "<group>"; };
 		517D3BAF2799ADE00054E0B8 /* RouterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInterface.swift; sourceTree = "<group>"; };
 		517D3BB22799ADF70054E0B8 /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				5177A307279F15A90009D6FA /* ViewModels */,
+				5177A30A279F16650009D6FA /* CharacterDetailInterfaces.swift */,
 			);
 			path = CharacterDetail;
 			sourceTree = "<group>";
@@ -761,6 +764,7 @@
 				5177A2D8279E896E0009D6FA /* CharactersListConstants.swift in Sources */,
 				5105896D279AC57600B05895 /* UIViewController+Extensions.swift in Sources */,
 				517D3BB32799ADF70054E0B8 /* ViewInterface.swift in Sources */,
+				5177A30B279F16650009D6FA /* CharacterDetailInterfaces.swift in Sources */,
 				51C1E7C7279AD13600A50FB7 /* NoInternetController.swift in Sources */,
 				5177A2EF279EAEB20009D6FA /* CharactersManagementService.swift in Sources */,
 				517D3BB02799ADE00054E0B8 /* RouterInterface.swift in Sources */,
