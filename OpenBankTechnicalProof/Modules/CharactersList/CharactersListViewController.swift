@@ -11,7 +11,7 @@ class CharactersListViewController: BaseViewController {
     
     // MARK: - IBOutlets -
     
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var charactersTableView: UITableView!
     
     // MARK: - Properties -
     
