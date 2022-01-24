@@ -19,8 +19,6 @@ final class CharactersListPresenter: CharactersListViewDelegateInterface {
     
     // MARK: - Lifecycle -
     
-    // MARK: - Lifecycle -
-    
     init(router: CharactersListRouterInterface, view: CharactersListViewInterface, interactor: CharactersListInteractorInterface? = nil) {
         self.router = router
         self.view = view
