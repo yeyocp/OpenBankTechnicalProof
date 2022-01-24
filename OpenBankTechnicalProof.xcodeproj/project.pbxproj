@@ -28,6 +28,7 @@
 		5177A2FC279EBA550009D6FA /* NetworkAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2FB279EBA550009D6FA /* NetworkAPIClient.swift */; };
 		5177A2FE279EC2B80009D6FA /* NetworkManagerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2FD279EC2B80009D6FA /* NetworkManagerBuilder.swift */; };
 		5177A302279ECA6B0009D6FA /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A301279ECA6B0009D6FA /* String+Extension.swift */; };
+		5177A305279F00590009D6FA /* CharactersListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A304279F00590009D6FA /* CharactersListTableViewController.swift */; };
 		517D3BAB2799AA1A0054E0B8 /* AppDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BAA2799AA1A0054E0B8 /* AppDefines.swift */; };
 		517D3BB02799ADE00054E0B8 /* RouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BAF2799ADE00054E0B8 /* RouterInterface.swift */; };
 		517D3BB32799ADF70054E0B8 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BB22799ADF70054E0B8 /* ViewInterface.swift */; };
@@ -99,6 +100,7 @@
 		5177A2FB279EBA550009D6FA /* NetworkAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIClient.swift; sourceTree = "<group>"; };
 		5177A2FD279EC2B80009D6FA /* NetworkManagerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerBuilder.swift; sourceTree = "<group>"; };
 		5177A301279ECA6B0009D6FA /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		5177A304279F00590009D6FA /* CharactersListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListTableViewController.swift; sourceTree = "<group>"; };
 		517D3BAA2799AA1A0054E0B8 /* AppDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefines.swift; sourceTree = "<group>"; };
 		517D3BAF2799ADE00054E0B8 /* RouterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInterface.swift; sourceTree = "<group>"; };
 		517D3BB22799ADF70054E0B8 /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
@@ -248,6 +250,14 @@
 				5177A2FD279EC2B80009D6FA /* NetworkManagerBuilder.swift */,
 			);
 			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		5177A303279F001B0009D6FA /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5177A304279F00590009D6FA /* CharactersListTableViewController.swift */,
+			);
+			path = TableViewController;
 			sourceTree = "<group>";
 		};
 		517D3BA92799A9F90054E0B8 /* Application */ = {
@@ -403,6 +413,7 @@
 			children = (
 				5177A2E2279E9EF20009D6FA /* Cells */,
 				5177A2DF279E9C920009D6FA /* DataSource */,
+				5177A303279F001B0009D6FA /* TableViewController */,
 				51C1E7C9279AD3E600A50FB7 /* ViewModels */,
 				51C1E7D2279AEE0D00A50FB7 /* CharactersListInterfaces.swift */,
 				51C1E7D4279AF0E700A50FB7 /* CharactersListInteractor.swift */,
@@ -714,6 +725,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5177A2DE279E92380009D6FA /* UINavigationItem+Extensions.swift in Sources */,
+				5177A305279F00590009D6FA /* CharactersListTableViewController.swift in Sources */,
 				5177A2EB279EA6890009D6FA /* LoaderViewController.swift in Sources */,
 				5177A2E5279E9F170009D6FA /* CharactersListTableViewCell.swift in Sources */,
 				51C1E7D7279AF2B700A50FB7 /* CharactersListPresenter.swift in Sources */,
