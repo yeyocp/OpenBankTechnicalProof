@@ -6,6 +6,7 @@ target 'OpenBankTechnicalProof' do
   use_frameworks!
 
   # Pods for OpenBankTechnicalProof
+  pod 'Alamofire'
   pod 'SwiftLint'
   pod 'MaterialComponents'
   pod 'ReachabilitySwift'
