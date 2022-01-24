@@ -24,6 +24,7 @@
 		5177A2EC279EA6890009D6FA /* LoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5177A2EA279EA6890009D6FA /* LoaderViewController.xib */; };
 		5177A2EF279EAEB20009D6FA /* CharactersManagementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2EE279EAEB20009D6FA /* CharactersManagementService.swift */; };
 		5177A2F1279EAF4A0009D6FA /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2F0279EAF490009D6FA /* NetworkManagerProtocol.swift */; };
+		5177A2F4279EB13B0009D6FA /* APIErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2F3279EB13B0009D6FA /* APIErrorType.swift */; };
 		517D3BAB2799AA1A0054E0B8 /* AppDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BAA2799AA1A0054E0B8 /* AppDefines.swift */; };
 		517D3BB02799ADE00054E0B8 /* RouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BAF2799ADE00054E0B8 /* RouterInterface.swift */; };
 		517D3BB32799ADF70054E0B8 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BB22799ADF70054E0B8 /* ViewInterface.swift */; };
@@ -91,6 +92,7 @@
 		5177A2EA279EA6890009D6FA /* LoaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoaderViewController.xib; sourceTree = "<group>"; };
 		5177A2EE279EAEB20009D6FA /* CharactersManagementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersManagementService.swift; sourceTree = "<group>"; };
 		5177A2F0279EAF490009D6FA /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		5177A2F3279EB13B0009D6FA /* APIErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorType.swift; sourceTree = "<group>"; };
 		517D3BAA2799AA1A0054E0B8 /* AppDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefines.swift; sourceTree = "<group>"; };
 		517D3BAF2799ADE00054E0B8 /* RouterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInterface.swift; sourceTree = "<group>"; };
 		517D3BB22799ADF70054E0B8 /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 		5177A2F2279EB1010009D6FA /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				5177A2F3279EB13B0009D6FA /* APIErrorType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -712,6 +715,7 @@
 				5177A2D5279E88DC0009D6FA /* CharactersListRouter.swift in Sources */,
 				51058967279ABAB500B05895 /* BaseViewControllerInterface.swift in Sources */,
 				5177A2F1279EAF4A0009D6FA /* NetworkManagerProtocol.swift in Sources */,
+				5177A2F4279EB13B0009D6FA /* APIErrorType.swift in Sources */,
 				517D3BAB2799AA1A0054E0B8 /* AppDefines.swift in Sources */,
 				51A07F5127997B820015EAFB /* SceneDelegate.swift in Sources */,
 				51C1E7CB279AD40600A50FB7 /* CharactersListItemViewModel.swift in Sources */,
