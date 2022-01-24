@@ -12,8 +12,11 @@ struct ServiceConstants {
     static let marvelPrivateKey = "23a2d7dd5138f1f2f627b502acd639e9d9ddca93"
     
     static let baseURL = "https://gateway.marvel.com:443"
-    static let charactersListPath = "/v1/public/characters?apikey=%@&hash=%@"
+    static let charactersListPath = "/v1/public/characters?%@&apikey=%@&hash=%@"
     static let characterDetailPath = "/v1/public/characters/%@?apikey=%@&hash=%@"
+    
+    static let timestampParameter = "ts=thesoer"
+    static let timestampValue = "thesoer"
 }
 
 struct CharactersListConstants {

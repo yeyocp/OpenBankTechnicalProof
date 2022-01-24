@@ -18,7 +18,12 @@ final class CharactersManagementService {
     func getCharacters(success: @escaping ([CharacterItemDomainModel]) -> Void,
                        failure: @escaping FailureCompletion) {
         
-        let getCharactersListFormat = ServiceConstants.baseURL + String(format: ServiceConstants.charactersListPath, ServiceConstants.marvelPublicKey, ServiceConstants.marvelPrivateKey)
+        let hash: String = "thesoer\(ServiceConstants.marvelPrivateKey)\(ServiceConstants.marvelPublicKey)".md5
+        let url = String(format: ServiceConstants.charactersListPath,
+                         ServiceConstants.timestampParameter,
+                         ServiceConstants.marvelPublicKey,
+                         hash)
+        let getCharactersListFormat = "\(ServiceConstants.baseURL)\(url)"
         let networkBuilder = NetworkManagerBuilder(urlString: getCharactersListFormat,
                                                    httpMethod: .GET,
                                                    parameters: nil )
