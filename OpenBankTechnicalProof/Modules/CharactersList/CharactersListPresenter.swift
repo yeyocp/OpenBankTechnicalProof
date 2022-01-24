@@ -33,21 +33,26 @@ extension CharactersListPresenter {
     // MARK: - Internal Methods
     
     func fetchCharactersList() {
-        interactor?.fetchCharactersList()
+        self.view.showLoader()
+        self.interactor?.fetchCharactersList()
     }
     
     func navigateToCharacterDetail(_ character: CharactersListItemViewModel) {
-        router.navigateToCharacterDetail(character)
+        self.router.navigateToCharacterDetail(character)
     }
 }
 
 extension CharactersListPresenter: CharactersListOutputInteractorInterface {
     
-    func onCharactersListSucceed(charactersListVM: [CharactersListItemViewModel?]) {
-        view.didCharactersFinish(charactersListVM)
+    func onCharactersListSucceed(charactersListDomain: [CharacterItemDomainModel]) {
+        let charactersListVM = CharactersListItemViewModelParser.parse(charactersListDomain)
+        
+        self.view.hideLoader()
+        self.view.didCharactersFinish(charactersListVM)
     }
     
     func onCharactersListFailed() {
-        router.showGeneralErrorScreen(shouldReturn: true)
+        self.view.hideLoader()
+        self.router.showGeneralErrorScreen(shouldReturn: true)
     }
 }

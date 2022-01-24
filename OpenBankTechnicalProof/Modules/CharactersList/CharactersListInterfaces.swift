@@ -36,6 +36,6 @@ protocol CharactersListInteractorInterface: InputInteractorInterface {
 }
 
 protocol CharactersListOutputInteractorInterface: OutputInteractorInterface {
-    func onCharactersListSucceed(charactersListVM: [CharactersListItemViewModel?])
+    func onCharactersListSucceed(charactersListDomain: [CharacterItemDomainModel])
     func onCharactersListFailed()
 }

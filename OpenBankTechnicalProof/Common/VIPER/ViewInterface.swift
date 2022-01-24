@@ -10,7 +10,10 @@ import UIKit
 
 // MARK: - Base View Interface -
 
-protocol ViewInterface: AnyObject, BaseViewControllerInterface {}
+protocol ViewInterface: AnyObject, BaseViewControllerInterface {
+    func showLoader()
+    func hideLoader()
+}
 
 // MARK: - Base View Interface Default Implementation -
 

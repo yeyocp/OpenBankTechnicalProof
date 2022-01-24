@@ -24,11 +24,7 @@ final class CharactersListInteractor: CharactersListInteractorInterface {
     
     func fetchCharactersList() {
         charactersManagementService.getMarvelCharacters(success: { charactersList in
-            var charactersListVM = CharactersListViewModel()
-            
-            charactersListVM = CharactersListViewModelParser.parse(charactersList)
-            
-            self.presenter?.onCharactersListSucceed(charactersListVM: charactersListVM)
+            self.presenter?.onCharactersListSucceed(charactersListDomain: charactersList)
         }, failure: { _, _ in
             self.presenter?.onCharactersListFailed()
         })
