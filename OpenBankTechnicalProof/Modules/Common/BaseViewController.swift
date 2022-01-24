@@ -19,6 +19,7 @@ class BaseViewController: UIViewController, BaseViewControllerInterface {
     // MARK: - Properties -
     
     var reachability: Reachability?
+    var navigationTitle = ""
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -52,6 +53,26 @@ class BaseViewController: UIViewController, BaseViewControllerInterface {
         reachability?.stopNotifier()
         reachability = nil
     }
+}
+
+extension BaseViewController {
+    
+    // MARK: - Navigation Title -
+    
+    func configure(navigationTitle: String) {
+        self.navigationTitle = navigationTitle
+    }
+    
+    private func setupNavigationTitle() {
+        if !navigationTitle.isEmpty {
+            navigationItem.setTitle(title: navigationTitle)
+        }
+    }
+}
+
+extension BaseViewController {
+    
+    // MARK: Reachability
     
     private func configureReachability() {
         
