@@ -17,13 +17,16 @@ class CharactersListViewController: BaseViewController {
     
     var presenter: CharactersListViewDelegateInterface?
     var charactersList: [CharactersListItemViewModel?]?
+    var dataSource: CharactersListDataSource?
     
     // MARK: - Lifecycle -
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.registerNib()
         self.initViews()
+        
         self.presenter?.fetchCharactersList()
     }
     
@@ -34,10 +37,35 @@ class CharactersListViewController: BaseViewController {
     }
 }
 
+// MARK: - Data Source -
+
+extension CharactersListViewController {
+    
+    private func registerNib() {
+        charactersTableView.register(CharactersListTableViewCell.nib,
+                                     forCellReuseIdentifier: CharactersListTableViewCell.reuseIdentifier)
+    }
+    
+    private func setupDataSource() {
+        if let charactersList = self.charactersList {
+            dataSource = CharactersListDataSource(tableView: self.charactersTableView, characters: charactersList)
+            dataSource?.delegate = self
+            charactersTableView.delegate = dataSource
+            charactersTableView.dataSource = dataSource
+            charactersTableView.reloadData()
+        }
+    }
+}
+
 extension CharactersListViewController: CharactersListViewInterface {
     
     func didCharactersFinish(_ charactersViewModel: [CharactersListItemViewModel?]) {
         self.charactersList = charactersViewModel
+        
+        if self.dataSource == nil {
+            setupDataSource()
+        }
+        
         self.charactersTableView.reloadData()
     }
 }

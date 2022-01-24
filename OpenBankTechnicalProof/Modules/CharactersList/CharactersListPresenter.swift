@@ -47,12 +47,16 @@ extension CharactersListPresenter: CharactersListOutputInteractorInterface {
     func onCharactersListSucceed(charactersListDomain: [CharacterItemDomainModel]) {
         let charactersListVM = CharactersListItemViewModelParser.parse(charactersListDomain)
         
-        self.view.hideLoader()
-        self.view.didCharactersFinish(charactersListVM)
+        DispatchQueue.main.async {
+            self.view.hideLoader()
+            self.view.didCharactersFinish(charactersListVM)
+        }
     }
     
     func onCharactersListFailed() {
-        self.view.hideLoader()
-        self.router.showGeneralErrorScreen(shouldReturn: true)
+        DispatchQueue.main.async {
+            self.view.hideLoader()
+            self.router.showGeneralErrorScreen(shouldReturn: true)
+        }
     }
 }

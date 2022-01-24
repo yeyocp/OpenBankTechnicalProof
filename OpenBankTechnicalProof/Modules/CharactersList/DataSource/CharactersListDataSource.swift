@@ -35,11 +35,11 @@ final class CharactersListDataSource: NSObject {
 
 extension CharactersListDataSource: UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return characters.count
     }
     
@@ -49,7 +49,7 @@ extension CharactersListDataSource: UITableViewDataSource {
 
         if let cell = tableView.dequeueReusableCell(withIdentifier: CharactersListTableViewCell.reuseIdentifier,
                                                     for: indexPath) as? CharactersListTableViewCell,
-            let character = characters[indexPath.row] {
+           let character = self.characters[indexPath.row] {
             
             cell.selectionStyle = .none
             cell.configure(character)
