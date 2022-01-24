@@ -5,5 +5,5 @@
 //  Created by Sergio Castaño Panchuelo on 20/1/22.
 //
 
-let marvelCharactersListViewController = "MarvelCharactersListViewController"
-let marvelCharacterDetailViewController = "MarvelCharacterDetailViewController"
+let charactersListViewController = "CharactersListViewController"
+let characterDetailViewController = "CharacterDetailViewController"
