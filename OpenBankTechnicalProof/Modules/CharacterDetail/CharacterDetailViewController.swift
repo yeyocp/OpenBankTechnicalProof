@@ -31,6 +31,16 @@ class CharacterDetailViewController: BaseViewController {
     
     private func initViews() {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
+        nameLabel.textColor = .black
+        nameLabel.font = .systemFont(ofSize: 20, weight: .bold)
+        descriptionLabel.textColor = #colorLiteral(red: 0.5843137255, green: 0.5843137255, blue: 0.6039215686, alpha: 1)
+        descriptionLabel.font = .systemFont(ofSize: 16, weight: .regular)
+    }
+    
+    private func setupView() {
+        nameLabel.text = self.characterDetail?.name
+        descriptionLabel.text = self.characterDetail?.description
     }
 }
 
@@ -40,7 +50,6 @@ extension CharacterDetailViewController: CharacterDetailViewInterface {
     
     func didCharacterDetailFinish(_ characterDetailViewModel: CharacterDetailViewModel?) {
         self.characterDetail = characterDetailViewModel
-        
-        // TODO: Fill in data
+        self.setupView()
     }
 }

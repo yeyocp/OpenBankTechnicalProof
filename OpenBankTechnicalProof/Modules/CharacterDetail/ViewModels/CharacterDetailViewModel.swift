@@ -10,6 +10,7 @@ import Foundation
 struct CharacterDetailViewModel {
     var id: Int
     var name: String
+    var description: String
     var imageURL: String
     var imageExtension: String
     
@@ -18,6 +19,7 @@ struct CharacterDetailViewModel {
     init(characterItemDomainModel: CharacterItemDomainModel) {
         self.id = characterItemDomainModel.id
         self.name = characterItemDomainModel.name
+        self.description = characterItemDomainModel.description
         self.imageURL = characterItemDomainModel.thumbnail.imageURL
         self.imageExtension = characterItemDomainModel.thumbnail.imageExtension
     }

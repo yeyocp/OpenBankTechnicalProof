@@ -20,6 +20,7 @@ struct CharactersDomainModelData: Codable, NetworkParser {
 struct CharacterItemDomainModel: Codable, NetworkParser {
     let id: Int
     let name: String
+    let description: String
     let thumbnail: CharacterItemThumbnail
     let resourceURI: String
 }
