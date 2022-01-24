@@ -24,7 +24,7 @@ final class CharactersListRouter: CharactersListRouterInterface {
         let interactor = CharactersListInteractor()
         let presenter = CharactersListPresenter(router: self, view: vc, interactor: interactor)
         
-        vc.configure(navigationTitle: title, navigationSubTitle: "")
+        vc.configure(navigationTitle: title)
         vc.presenter = presenter
         interactor.presenter = presenter
         self.viewController = vc

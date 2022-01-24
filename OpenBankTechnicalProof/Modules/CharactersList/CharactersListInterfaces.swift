@@ -13,7 +13,7 @@ protocol CharactersListRouterInterface: RouterInterface {
 
 protocol CharactersListViewInterface: ViewInterface {
     var presenter: CharactersListViewDelegateInterface? { get set }
-    var marvelCharactersList: [CharactersListItemViewModel?] { get }
+    var charactersList: [CharactersListItemViewModel?]? { get }
     
     func didCharactersFinish(_ charactersViewModel: [CharactersListItemViewModel?])
     
