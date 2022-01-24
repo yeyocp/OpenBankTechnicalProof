@@ -21,17 +21,17 @@ protocol CharacterDetailViewDelegateInterface: PresenterInterface {
     var view: CharacterDetailViewInterface { get }
     var interactor: CharacterDetailInteractorInterface? { get }
         
-    func fetchCharacterDetail()
+    func fetchCharacterDetail(id: Int)
 }
 
 protocol CharacterDetailInteractorInterface: InputInteractorInterface {
     var presenter: CharacterDetailOutputInteractorInterface? { get set }
     var charactersManagementService: CharactersManagementService { get }
     
-    func fetchCharacterDetail()
+    func fetchCharacterDetail(id: Int)
 }
 
 protocol CharacterDetailOutputInteractorInterface: OutputInteractorInterface {
     func onCharacterDetailSucceed(characterDetailDomain: CharacterItemDomainModel)
-    func onCharactersDetailFailed()
+    func onCharacterDetailFailed()
 }
