@@ -17,6 +17,7 @@
 		5177A2DB279E8C840009D6FA /* CharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2D9279E8C830009D6FA /* CharactersListViewController.swift */; };
 		5177A2DC279E8C840009D6FA /* CharactersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5177A2DA279E8C830009D6FA /* CharactersListViewController.xib */; };
 		5177A2DE279E92380009D6FA /* UINavigationItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2DD279E92380009D6FA /* UINavigationItem+Extensions.swift */; };
+		5177A2E1279E9CAB0009D6FA /* CharactersListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2E0279E9CAB0009D6FA /* CharactersListDataSource.swift */; };
 		517D3BAB2799AA1A0054E0B8 /* AppDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BAA2799AA1A0054E0B8 /* AppDefines.swift */; };
 		517D3BB02799ADE00054E0B8 /* RouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BAF2799ADE00054E0B8 /* RouterInterface.swift */; };
 		517D3BB32799ADF70054E0B8 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BB22799ADF70054E0B8 /* ViewInterface.swift */; };
@@ -77,6 +78,7 @@
 		5177A2D9279E8C830009D6FA /* CharactersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewController.swift; sourceTree = "<group>"; };
 		5177A2DA279E8C830009D6FA /* CharactersListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersListViewController.xib; sourceTree = "<group>"; };
 		5177A2DD279E92380009D6FA /* UINavigationItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extensions.swift"; sourceTree = "<group>"; };
+		5177A2E0279E9CAB0009D6FA /* CharactersListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListDataSource.swift; sourceTree = "<group>"; };
 		517D3BAA2799AA1A0054E0B8 /* AppDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefines.swift; sourceTree = "<group>"; };
 		517D3BAF2799ADE00054E0B8 /* RouterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInterface.swift; sourceTree = "<group>"; };
 		517D3BB22799ADF70054E0B8 /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
@@ -175,6 +177,14 @@
 				5177A2D7279E896E0009D6FA /* CharactersListConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		5177A2DF279E9C920009D6FA /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				5177A2E0279E9CAB0009D6FA /* CharactersListDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		517D3BA92799A9F90054E0B8 /* Application */ = {
@@ -322,6 +332,7 @@
 		51C1E7C8279AD37100A50FB7 /* CharactersList */ = {
 			isa = PBXGroup;
 			children = (
+				5177A2DF279E9C920009D6FA /* DataSource */,
 				51C1E7C9279AD3E600A50FB7 /* ViewModels */,
 				51C1E7D2279AEE0D00A50FB7 /* CharactersListInterfaces.swift */,
 				51C1E7D4279AF0E700A50FB7 /* CharactersListInteractor.swift */,
@@ -634,6 +645,7 @@
 				51C1E7D7279AF2B700A50FB7 /* CharactersListPresenter.swift in Sources */,
 				517D3BB72799AE0F0054E0B8 /* InteractorInterface.swift in Sources */,
 				5105896B279AC43900B05895 /* UIColor+Extensions.swift in Sources */,
+				5177A2E1279E9CAB0009D6FA /* CharactersListDataSource.swift in Sources */,
 				51058969279ABD6C00B05895 /* UINavigationController+Extensions.swift in Sources */,
 				51C1E7D5279AF0E700A50FB7 /* CharactersListInteractor.swift in Sources */,
 				517D3BC32799BF2A0054E0B8 /* LocalizableProtocol.swift in Sources */,
