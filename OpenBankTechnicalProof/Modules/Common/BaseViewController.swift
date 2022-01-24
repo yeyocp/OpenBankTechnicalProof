@@ -18,8 +18,9 @@ class BaseViewController: UIViewController, BaseViewControllerInterface {
     
     // MARK: - Properties -
     
-    var reachability: Reachability?
     var navigationTitle = ""
+    var reachability: Reachability?
+    var loader: LoaderViewController?
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -72,7 +73,7 @@ extension BaseViewController {
 
 extension BaseViewController {
     
-    // MARK: Reachability
+    // MARK: - Reachability  -
     
     private func configureReachability() {
         
@@ -91,6 +92,31 @@ extension BaseViewController {
             try self.reachability?.startNotifier()
         } catch {
             print("Unable to start the network notifier")
+        }
+    }
+}
+
+extension BaseViewController {
+    
+    // MARK: - Loader  -
+    
+    func showLoader() {
+        
+        DispatchQueue.main.async {
+            if self.loader == nil {
+                self.loader = LoaderViewController(nibName: "LoaderViewController", bundle: nil)
+            }
+            
+            self.loader?.show(over: self)
+        }
+    }
+    
+    func hideLoader() {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            if let loader = self.loader {
+                loader.hide()
+            }
         }
     }
 }
