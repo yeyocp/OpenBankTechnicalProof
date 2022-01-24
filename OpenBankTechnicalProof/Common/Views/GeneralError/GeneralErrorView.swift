@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import MaterialComponents
 
 class GeneralErrorView: UIViewController {
     
@@ -15,7 +14,7 @@ class GeneralErrorView: UIViewController {
     @IBOutlet private weak var errorImage: UIImageView!
     @IBOutlet private weak var errorTitle: UILabel!
     @IBOutlet private weak var errorDescriptionTextView: UITextView!
-    @IBOutlet private weak var errorButton: MDCFloatingButton!
+    @IBOutlet private weak var errorButton: UIButton!
     
     // MARK: - Properties -
     

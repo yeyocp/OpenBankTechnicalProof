@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -10,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GeneralErrorView" customModule="OpenBankTechnicalProof" customModuleProvider="target">
             <connections>
-                <outlet property="errorButton" destination="aty-lW-33h" id="Zzm-2c-auS"/>
+                <outlet property="errorButton" destination="aty-lW-33h" id="NAy-Ps-XLG"/>
                 <outlet property="errorDescriptionTextView" destination="aDl-ns-acT" id="9RP-cg-vEM"/>
                 <outlet property="errorImage" destination="ldq-QL-Jfh" id="hSR-6l-JCC"/>
                 <outlet property="errorTitle" destination="4Iz-IM-QAP" id="ap4-yk-4VC"/>
