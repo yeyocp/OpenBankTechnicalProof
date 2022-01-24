@@ -33,6 +33,8 @@
 		5177A30D279F17990009D6FA /* CharacterDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A30C279F17990009D6FA /* CharacterDetailInteractor.swift */; };
 		5177A30F279F18B10009D6FA /* CharacterDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A30E279F18B10009D6FA /* CharacterDetailPresenter.swift */; };
 		5177A311279F1A170009D6FA /* CharacterDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A310279F1A170009D6FA /* CharacterDetailRouter.swift */; };
+		5177A314279F1B750009D6FA /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A312279F1B750009D6FA /* CharacterDetailViewController.swift */; };
+		5177A315279F1B750009D6FA /* CharacterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5177A313279F1B750009D6FA /* CharacterDetailViewController.xib */; };
 		517D3BAB2799AA1A0054E0B8 /* AppDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BAA2799AA1A0054E0B8 /* AppDefines.swift */; };
 		517D3BB02799ADE00054E0B8 /* RouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BAF2799ADE00054E0B8 /* RouterInterface.swift */; };
 		517D3BB32799ADF70054E0B8 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3BB22799ADF70054E0B8 /* ViewInterface.swift */; };
@@ -109,6 +111,8 @@
 		5177A30C279F17990009D6FA /* CharacterDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailInteractor.swift; sourceTree = "<group>"; };
 		5177A30E279F18B10009D6FA /* CharacterDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenter.swift; sourceTree = "<group>"; };
 		5177A310279F1A170009D6FA /* CharacterDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailRouter.swift; sourceTree = "<group>"; };
+		5177A312279F1B750009D6FA /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		5177A313279F1B750009D6FA /* CharacterDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailViewController.xib; sourceTree = "<group>"; };
 		517D3BAA2799AA1A0054E0B8 /* AppDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefines.swift; sourceTree = "<group>"; };
 		517D3BAF2799ADE00054E0B8 /* RouterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInterface.swift; sourceTree = "<group>"; };
 		517D3BB22799ADF70054E0B8 /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 				5177A30A279F16650009D6FA /* CharacterDetailInterfaces.swift */,
 				5177A30C279F17990009D6FA /* CharacterDetailInteractor.swift */,
 				5177A30E279F18B10009D6FA /* CharacterDetailPresenter.swift */,
+				5177A312279F1B750009D6FA /* CharacterDetailViewController.swift */,
+				5177A313279F1B750009D6FA /* CharacterDetailViewController.xib */,
 			);
 			path = CharacterDetail;
 			sourceTree = "<group>";
@@ -595,6 +601,7 @@
 				5177A2DC279E8C840009D6FA /* CharactersListViewController.xib in Resources */,
 				51A07F5B27997B850015EAFB /* LaunchScreen.storyboard in Resources */,
 				517D3BBF2799B8790054E0B8 /* GeneralErrorView.xib in Resources */,
+				5177A315279F1B750009D6FA /* CharacterDetailViewController.xib in Resources */,
 				5177A2E6279E9F170009D6FA /* CharactersListTableViewCell.xib in Resources */,
 				51A07F5827997B850015EAFB /* Assets.xcassets in Resources */,
 				5177A2EC279EA6890009D6FA /* LoaderViewController.xib in Resources */,
@@ -764,6 +771,7 @@
 				5177A2DB279E8C840009D6FA /* CharactersListViewController.swift in Sources */,
 				517D3BC62799BF9C0054E0B8 /* String+Localizable.swift in Sources */,
 				5177A2D5279E88DC0009D6FA /* CharactersListRouter.swift in Sources */,
+				5177A314279F1B750009D6FA /* CharacterDetailViewController.swift in Sources */,
 				51058967279ABAB500B05895 /* BaseViewControllerInterface.swift in Sources */,
 				5177A30F279F18B10009D6FA /* CharacterDetailPresenter.swift in Sources */,
 				5177A2F1279EAF4A0009D6FA /* NetworkManagerProtocol.swift in Sources */,
