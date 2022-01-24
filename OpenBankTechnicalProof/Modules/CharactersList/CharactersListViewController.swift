@@ -23,17 +23,28 @@ class CharactersListViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.initViews()
+        self.presenter?.fetchCharactersList()
+    }
+    
+    // MARK: - Private Methods -
+    
+    private func initViews() {
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
 }
 
 extension CharactersListViewController: CharactersListViewInterface {
     
     func didCharactersFinish(_ charactersViewModel: [CharactersListItemViewModel?]) {
-        // TODO: Implement
+        self.charactersList = charactersViewModel
+        self.charactersTableView.reloadData()
     }
+}
+
+extension CharactersListViewController: CharactersListDataSourceDelegate {
     
-    func loadCharactersList(charactersList: [CharactersListItemViewModel?]) {
-        // TODO: Implement
+    func didSelectCharacter(_ character: CharactersListItemViewModel) {
+        presenter?.navigateToCharacterDetail(character)
     }
 }

@@ -36,15 +36,15 @@ extension CharactersListPresenter {
         interactor?.fetchCharactersList()
     }
     
-    func navigateToCharacterDetail(vm: CharactersListItemViewModel) {
-        router.navigateToCharacterDetail(character: vm)
+    func navigateToCharacterDetail(_ character: CharactersListItemViewModel) {
+        router.navigateToCharacterDetail(character)
     }
 }
 
 extension CharactersListPresenter: CharactersListOutputInteractorInterface {
     
     func onCharactersListSucceed(charactersListVM: [CharactersListItemViewModel?]) {
-        view.loadCharactersList(charactersList: charactersListVM)
+        view.didCharactersFinish(charactersListVM)
     }
     
     func onCharactersListFailed() {

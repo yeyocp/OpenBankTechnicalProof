@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CharactersListRouterInterface: RouterInterface {
-    func navigateToCharacterDetail(character: CharactersListItemViewModel)
+    func navigateToCharacterDetail(_ character: CharactersListItemViewModel)
 }
 
 protocol CharactersListViewInterface: ViewInterface {
@@ -16,8 +16,6 @@ protocol CharactersListViewInterface: ViewInterface {
     var charactersList: [CharactersListItemViewModel?]? { get }
     
     func didCharactersFinish(_ charactersViewModel: [CharactersListItemViewModel?])
-    
-    func loadCharactersList(charactersList: [CharactersListItemViewModel?])
 }
 
 protocol CharactersListViewDelegateInterface: PresenterInterface {
@@ -25,7 +23,7 @@ protocol CharactersListViewDelegateInterface: PresenterInterface {
     var view: CharactersListViewInterface { get }
     var interactor: CharactersListInteractorInterface? { get }
     
-    func navigateToCharacterDetail(vm: CharactersListItemViewModel)
+    func navigateToCharacterDetail(_ character: CharactersListItemViewModel)
     
     func fetchCharactersList()
 }
