@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Alamofire
 
 typealias FailureCompletion = (Error?, APIErrorType) -> Void
 
