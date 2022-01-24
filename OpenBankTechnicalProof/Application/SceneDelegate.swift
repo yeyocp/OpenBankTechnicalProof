@@ -21,7 +21,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window?.windowScene = windowScene
         
-        window?.rootViewController = CharactersListViewController()
+        let router = CharactersListRouter()
+        
+        window?.rootViewController = router.instantiateViewController(nil as String?)
         
         window?.makeKeyAndVisible()
     }
