@@ -37,10 +37,10 @@ extension CharactersListRouter {
     
     func navigateToCharacterDetail(_ character: CharactersListItemViewModel) {
         // TODO: Remove commented code
-//        let characterRouter = CharacterDetailRouter()
-//
-//        characterRouter.navigationController = navigationController
-//        characterRouter.characterId = character.id
-//        characterRouter.pushOnNavigationController()
+        let characterDetailRouter = CharacterDetailRouter()
+
+        characterDetailRouter.navigationController = navigationController
+        characterDetailRouter.characterId = character.id
+        characterDetailRouter.pushOnNavigationController()
     }
 }

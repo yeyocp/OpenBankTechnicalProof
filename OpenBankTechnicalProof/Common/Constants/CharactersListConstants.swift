@@ -24,3 +24,7 @@ struct ServiceConstants {
 struct CharactersListConstants {
     static let characters = "characters.title".localized()
 }
+
+struct CharacterDetailConstants {
+    static let characterDetail = "characterDetail.title".localized()
+}
