@@ -11,6 +11,9 @@ class CharacterDetailViewController: BaseViewController {
 
     // MARK: - IBOutlets -
     
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var descriptionLabel: UILabel!
+    
     // MARK: - Properties -
     
     var presenter: CharacterDetailViewDelegateInterface?
