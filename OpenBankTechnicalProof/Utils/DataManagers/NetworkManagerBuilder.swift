@@ -13,8 +13,8 @@ struct NetworkManagerBuilder: NetworkManagerRequestProtocol {
     var httpMethod: HttpMethod
     var parameters: [String: Any]?
     
-    init(path: String, httpMethod: HttpMethod = .GET, parameters: [String: Any]? = nil) {
-        self.path = path
+    init(urlString: String, httpMethod: HttpMethod = .GET, parameters: [String: Any]? = nil) {
+        self.urlString = urlString
         self.httpMethod = httpMethod
         self.parameters = parameters
     }
