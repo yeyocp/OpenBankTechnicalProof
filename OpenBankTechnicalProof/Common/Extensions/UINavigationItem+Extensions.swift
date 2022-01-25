@@ -14,7 +14,7 @@ extension UINavigationItem {
         let titleLabel = UILabel()
         
         titleLabel.text = title
-        titleLabel.font = FontsConstants.systemBold15
+        titleLabel.font = FontsConstants.systemBold18
         titleLabel.sizeToFit()
         titleLabel.textColor = ColorsConstants.navigationTextColor
         
