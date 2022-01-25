@@ -31,6 +31,7 @@ class BaseViewController: UIViewController, BaseViewControllerInterface {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.setupNavigationTitle()
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: Constants.navigationBackString.localized(),
                                                                 style: .plain,
                                                                 target: nil,
@@ -41,7 +42,7 @@ class BaseViewController: UIViewController, BaseViewControllerInterface {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        navigationController?.setStyle(isTransparent: false)
+        navigationController?.setStyle()
         self.navigationController?.navigationBar.isTranslucent = false
         self.edgesForExtendedLayout = []
         

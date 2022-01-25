@@ -9,18 +9,17 @@ import UIKit
 
 extension UINavigationController {
     
-    func setStyle(isTransparent: Bool) {
+    func setStyle() {
         let textAttributes = [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)]
+        let appearance = UINavigationBarAppearance()
         
-        self.navigationBar.titleTextAttributes = textAttributes
-        self.navigationBar.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        self.navigationBar.barTintColor = isTransparent ? #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) : #colorLiteral(red: 0.1568627451, green: 0.2274509804, blue: 0.6784313725, alpha: 1)
-
-        let clearImage = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0).imageRepresentation
-        let removeBorderImage = isTransparent ? clearImage : nil
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = #colorLiteral(red: 0.1568627451, green: 0.2274509804, blue: 0.6784313725, alpha: 1)
+        appearance.shadowColor = .black
+        appearance.titleTextAttributes = textAttributes
+        self.navigationBar.standardAppearance = appearance;
+        self.navigationBar.scrollEdgeAppearance = self.navigationBar.standardAppearance
         
-        self.navigationBar.setBackgroundImage(removeBorderImage, for: .default)
-        self.navigationBar.shadowImage = removeBorderImage
         self.navigationBar.layoutIfNeeded()
     }
 }
