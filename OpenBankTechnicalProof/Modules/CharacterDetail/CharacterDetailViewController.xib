@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterDetailViewController" customModule="OpenBankTechnicalProof" customModuleProvider="target">
             <connections>
+                <outlet property="characterImage" destination="tUC-a6-Qjk" id="eod-8D-KQa"/>
                 <outlet property="descriptionLabel" destination="qHM-aO-S3d" id="Qhn-IR-cgX"/>
                 <outlet property="nameLabel" destination="eX0-pZ-nHp" id="cpv-JO-paE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -22,16 +23,19 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6lM-2I-Q6f">
-                    <rect key="frame" x="10" y="44" width="394" height="51"/>
+                    <rect key="frame" x="10" y="44" width="394" height="818"/>
                     <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tUC-a6-Qjk">
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="128"/>
+                        </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX0-pZ-nHp">
-                            <rect key="frame" x="0.0" y="0.0" width="394" height="20.5"/>
+                            <rect key="frame" x="0.0" y="138" width="394" height="649.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHM-aO-S3d">
-                            <rect key="frame" x="0.0" y="30.5" width="394" height="20.5"/>
+                            <rect key="frame" x="0.0" y="797.5" width="394" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -43,6 +47,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="6lM-2I-Q6f" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="87k-TO-FGg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6lM-2I-Q6f" secondAttribute="bottom" id="NUz-AN-mKo"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6lM-2I-Q6f" secondAttribute="trailing" constant="10" id="iGn-rJ-tJK"/>
                 <constraint firstItem="6lM-2I-Q6f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="r9w-L1-cR8"/>
             </constraints>

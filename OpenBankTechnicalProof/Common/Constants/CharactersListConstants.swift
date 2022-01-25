@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct ServiceConstants {
     static let marvelPublicKey = "ba2d2dd75e334b3e306193b6a963de58"
@@ -23,6 +24,7 @@ struct ServiceConstants {
 
 struct CharactersListConstants {
     static let characters = "characters.title".localized()
+    static let rowHeight: CGFloat = 44
 }
 
 struct CharacterDetailConstants {

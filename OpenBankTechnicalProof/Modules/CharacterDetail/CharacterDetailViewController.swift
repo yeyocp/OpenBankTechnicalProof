@@ -11,6 +11,7 @@ class CharacterDetailViewController: BaseViewController {
 
     // MARK: - IBOutlets -
     
+    @IBOutlet weak var characterImage: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     
@@ -41,6 +42,11 @@ class CharacterDetailViewController: BaseViewController {
     }
     
     private func setupView() {
+        if let characterDetail = self.characterDetail,
+            let imageURL = URL(string: "\(characterDetail.imageURL).\(characterDetail.imageExtension)") {
+            characterImage.load(url: imageURL)
+        }
+        
         nameLabel.text = self.characterDetail?.name
         descriptionLabel.text = self.characterDetail?.description
     }
