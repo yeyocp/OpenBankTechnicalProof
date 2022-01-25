@@ -55,10 +55,12 @@ class LoaderViewController: UIViewController {
         }
     }
     
-    func hide() {
+    func hide(completion: (() -> Void)? = nil) {
         
         DispatchQueue.main.async {
-            self.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true) {
+                completion?()
+            }
         }
     }
 }

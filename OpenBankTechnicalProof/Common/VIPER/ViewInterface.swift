@@ -12,7 +12,7 @@ import UIKit
 
 protocol ViewInterface: AnyObject, BaseViewControllerInterface {
     func showLoader()
-    func hideLoader()
+    func hideLoader(completion: (() -> Void)?)
 }
 
 // MARK: - Base View Interface Default Implementation -

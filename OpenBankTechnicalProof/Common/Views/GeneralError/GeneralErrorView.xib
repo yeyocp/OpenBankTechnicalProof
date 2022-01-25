@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,13 +25,24 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8WC-d1-mGu">
-                    <rect key="frame" x="60" y="315.5" width="294" height="265"/>
+                    <rect key="frame" x="60" y="328" width="294" height="240"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="General_error" translatesAutoresizingMaskIntoConstraints="NO" id="ldq-QL-Jfh">
-                            <rect key="frame" x="0.0" y="0.0" width="294" height="145"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ldq-QL-Jfh">
+                            <rect key="frame" x="97" y="-1.5" width="100" height="103"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="oAp-J2-wGt"/>
+                                <constraint firstAttribute="height" constant="100" id="upV-lx-Xq3"/>
+                            </constraints>
+                            <imageReference key="image" image="xmark.octagon" catalog="system" symbolScale="large" renderingMode="hierarchical">
+                                <hierarchicalColors>
+                                    <color systemColor="systemRedColor"/>
+                                    <color systemColor="systemRedColor"/>
+                                    <color systemColor="systemRedColor"/>
+                                </hierarchicalColors>
+                            </imageReference>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Iz-IM-QAP">
-                            <rect key="frame" x="0.0" y="135" width="294" height="20"/>
+                            <rect key="frame" x="0.0" y="110" width="294" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="KU6-y4-uWe"/>
                             </constraints>
@@ -39,7 +51,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Error fetching data" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDl-ns-acT">
-                            <rect key="frame" x="0.0" y="155" width="294" height="51"/>
+                            <rect key="frame" x="0.0" y="130" width="294" height="51"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="51" id="BMr-tM-cX9"/>
@@ -47,8 +59,8 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aty-lW-33h" customClass="MDCFloatingButton">
-                            <rect key="frame" x="0.0" y="226" width="294" height="39"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aty-lW-33h">
+                            <rect key="frame" x="0.0" y="201" width="294" height="39"/>
                             <color key="backgroundColor" red="0.26274509800000001" green="0.40000000000000002" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="39" id="aGH-LC-uGa"/>
@@ -68,15 +80,13 @@
                         <constraint firstAttribute="trailing" secondItem="aty-lW-33h" secondAttribute="trailing" id="BU3-y6-Q4e"/>
                         <constraint firstItem="aDl-ns-acT" firstAttribute="leading" secondItem="8WC-d1-mGu" secondAttribute="leading" id="Ex9-wE-gWC"/>
                         <constraint firstItem="aDl-ns-acT" firstAttribute="bottom" secondItem="aty-lW-33h" secondAttribute="top" constant="-20" id="FCw-FU-Jdc"/>
+                        <constraint firstItem="ldq-QL-Jfh" firstAttribute="top" secondItem="8WC-d1-mGu" secondAttribute="top" id="Fu5-TN-QT1"/>
                         <constraint firstAttribute="trailing" secondItem="aDl-ns-acT" secondAttribute="trailing" id="NcJ-3x-MvL"/>
-                        <constraint firstItem="ldq-QL-Jfh" firstAttribute="top" secondItem="8WC-d1-mGu" secondAttribute="top" id="R5p-qQ-LAi"/>
                         <constraint firstAttribute="bottom" secondItem="aty-lW-33h" secondAttribute="bottom" id="UKX-CJ-fGm"/>
-                        <constraint firstAttribute="trailing" secondItem="ldq-QL-Jfh" secondAttribute="trailing" id="hjE-wQ-wbn"/>
                         <constraint firstItem="4Iz-IM-QAP" firstAttribute="leading" secondItem="8WC-d1-mGu" secondAttribute="leading" id="kPk-ic-T1Y"/>
-                        <constraint firstItem="ldq-QL-Jfh" firstAttribute="leading" secondItem="8WC-d1-mGu" secondAttribute="leading" id="kWK-At-FQ9"/>
                         <constraint firstItem="4Iz-IM-QAP" firstAttribute="centerX" secondItem="8WC-d1-mGu" secondAttribute="centerX" id="lRm-X3-tdA"/>
                         <constraint firstItem="aDl-ns-acT" firstAttribute="top" secondItem="4Iz-IM-QAP" secondAttribute="bottom" id="loj-6d-YLo"/>
-                        <constraint firstItem="4Iz-IM-QAP" firstAttribute="top" secondItem="ldq-QL-Jfh" secondAttribute="bottom" constant="-10" id="rLM-CI-gss"/>
+                        <constraint firstItem="4Iz-IM-QAP" firstAttribute="top" secondItem="ldq-QL-Jfh" secondAttribute="bottom" constant="10" id="rLM-CI-gss"/>
                         <constraint firstItem="ldq-QL-Jfh" firstAttribute="centerX" secondItem="8WC-d1-mGu" secondAttribute="centerX" id="sCi-dE-hOp"/>
                     </constraints>
                 </view>
@@ -92,9 +102,12 @@
         </view>
     </objects>
     <resources>
-        <image name="General_error" width="118" height="145"/>
+        <image name="xmark.octagon" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

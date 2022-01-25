@@ -42,15 +42,17 @@ extension CharacterDetailPresenter: CharacterDetailOutputInteractorInterface {
         let characterDetailVM = CharacterDetailViewModelParser.parse(characterDetailDomain)
         
         DispatchQueue.main.async {
-            self.view.hideLoader()
-            self.view.didCharacterDetailFinish(characterDetailVM)
+            self.view.hideLoader {
+                self.view.didCharacterDetailFinish(characterDetailVM)
+            }
         }
     }
     
     func onCharacterDetailFailed() {
         DispatchQueue.main.async {
-            self.view.hideLoader()
-            self.router.showGeneralErrorScreen(shouldReturn: true)
+            self.view.hideLoader {
+                self.router.showGeneralErrorScreen(shouldReturn: true)
+            }
         }
     }
 }

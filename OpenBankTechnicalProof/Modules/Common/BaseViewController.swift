@@ -112,11 +112,15 @@ extension BaseViewController {
         }
     }
     
-    func hideLoader() {
+    func hideLoader(completion: (() -> Void)? = nil) {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             if let loader = self.loader {
-                loader.hide()
+                loader.hide {
+                    completion?()
+                }
+            } else {
+                completion?()
             }
         }
     }
