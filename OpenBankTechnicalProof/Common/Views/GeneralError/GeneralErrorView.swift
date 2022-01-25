@@ -59,6 +59,7 @@ extension GeneralErrorView {
     
     private func setupView() {
         self.view.backgroundColor = ColorsConstants.errorBackgroundColor
+        errorImage.image = UIImage(systemName: "xmark.octagon")?.withTintColor(ColorsConstants.mainColor, renderingMode: .alwaysOriginal)
         errorButton.setTitleColor(.white, for: .normal)
         errorButton.backgroundColor = ColorsConstants.mainColor
         errorButton.titleLabel?.font = FontsConstants.systemBold16
