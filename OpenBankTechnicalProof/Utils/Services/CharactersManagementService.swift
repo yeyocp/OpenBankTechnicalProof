@@ -43,11 +43,12 @@ final class CharactersManagementService {
         }
     }
     
-    func getCharacterDetail(id: Int,
+    func getCharacterDetail(characterId: Int,
                             success: @escaping (CharacterItemDomainModel) -> Void,
                             failure: @escaping FailureCompletion) {
         
         let parameters = String(format: ServiceConstants.characterDetailPath,
+                                "\(characterId)",
                                 ServiceConstants.timestampParameter,
                                 ServiceConstants.marvelPublicKey,
                                 ServiceConstants.hash)

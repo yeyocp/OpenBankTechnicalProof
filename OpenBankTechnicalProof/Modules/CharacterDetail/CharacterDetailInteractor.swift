@@ -23,7 +23,7 @@ final class CharacterDetailInteractor: CharacterDetailInteractorInterface {
     // MARK: - Internal Methods -
     
     func fetchCharacterDetail(id: Int) {
-        charactersManagementService.getCharacterDetail(id: id, success: { character in
+        charactersManagementService.getCharacterDetail(characterId: id, success: { character in
             self.presenter?.onCharacterDetailSucceed(characterDetailDomain: character)
         }) { _, _ in
             self.presenter?.onCharacterDetailFailed()

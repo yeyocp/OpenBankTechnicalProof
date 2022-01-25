@@ -24,6 +24,10 @@ final class CharacterDetailRouter: CharacterDetailRouterInterface {
         let interactor = CharacterDetailInteractor()
         let presenter = CharacterDetailPresenter(router: self, view: vc, interactor: interactor)
         
+        if let characterId = self.characterId {
+            vc.characterId = characterId
+        }
+        
         vc.configure(navigationTitle: title)
         vc.presenter = presenter
         interactor.presenter = presenter

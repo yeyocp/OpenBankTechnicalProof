@@ -13,7 +13,7 @@ struct ServiceConstants {
     
     static let baseURL = "https://gateway.marvel.com:443"
     static let charactersListPath = "/v1/public/characters?%@&apikey=%@&hash=%@"
-    static let characterDetailPath = "/v1/public/characters/%@?%@apikey=%@&hash=%@"
+    static let characterDetailPath = "/v1/public/characters/%@?%@&apikey=%@&hash=%@"
     
     static let timestampParameter = "ts=thesoer"
     static let timestampValue = "thesoer"
