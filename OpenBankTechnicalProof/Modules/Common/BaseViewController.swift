@@ -36,6 +36,7 @@ class BaseViewController: UIViewController, BaseViewControllerInterface {
                                                                 style: .plain,
                                                                 target: nil,
                                                                 action: nil)
+        self.navigationItem.backBarButtonItem?.tintColor = ColorsConstants.navigationTextColor
         self.navigationController?.navigationBar.barStyle = .black
     }
     
