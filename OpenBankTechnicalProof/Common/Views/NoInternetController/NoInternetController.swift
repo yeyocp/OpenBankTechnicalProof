@@ -29,6 +29,6 @@ class NoInternetController: BaseViewController {
         alertView.backgroundColor = ColorsConstants.noInternetBackgroundColor
         titleLabel.text = Constants.noInternetTitleLocalized
         titleLabel.textColor = ColorsConstants.noInternetTextColor
-        titleLabel.font = .systemFont(ofSize: 14, weight: .regular)
+        titleLabel.font = FontsConstants.systemRegular14
     }
 }

@@ -36,9 +36,9 @@ class CharacterDetailViewController: BaseViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         
         nameLabel.textColor = ColorsConstants.labelMainColor
-        nameLabel.font = .systemFont(ofSize: 20, weight: .bold)
+        nameLabel.font = FontsConstants.systemBold20
         descriptionLabel.textColor = ColorsConstants.labelSecondaryColor
-        descriptionLabel.font = .systemFont(ofSize: 16, weight: .regular)
+        descriptionLabel.font = FontsConstants.systemRegular16
     }
     
     private func setupView() {

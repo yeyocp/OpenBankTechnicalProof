@@ -61,13 +61,13 @@ extension GeneralErrorView {
         self.view.backgroundColor = ColorsConstants.errorBackgroundColor
         errorButton.setTitleColor(.white, for: .normal)
         errorButton.backgroundColor = ColorsConstants.mainColor
-        errorButton.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
+        errorButton.titleLabel?.font = FontsConstants.systemBold16
         errorButton.titleLabel?.numberOfLines = 1
         errorButton.titleLabel?.adjustsFontSizeToFitWidth = true
         errorButton.titleLabel?.lineBreakMode = NSLineBreakMode.byClipping
-        errorTitle.font = .systemFont(ofSize: 16, weight: .medium)
+        errorTitle.font = FontsConstants.systemMedium16
         errorTitle.textColor = ColorsConstants.mainColor
-        errorDescriptionTextView.font = .systemFont(ofSize: 14, weight: .regular)
+        errorDescriptionTextView.font = FontsConstants.systemRegular14
         errorDescriptionTextView.textColor = ColorsConstants.errorDescriptionColor
     }
 }
