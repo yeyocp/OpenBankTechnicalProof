@@ -18,6 +18,7 @@ class CharacterDetailViewController: BaseViewController {
     
     var presenter: CharacterDetailViewDelegateInterface?
     var characterDetail: CharacterDetailViewModel?
+    var characterId: Int = 0
     
     // MARK: - Lifecycle -
     
@@ -25,6 +26,7 @@ class CharacterDetailViewController: BaseViewController {
         super.viewDidLoad()
         
         self.initViews()
+        self.presenter?.fetchCharacterDetail(id: characterId)
     }
     
     // MARK: - Private Methods -

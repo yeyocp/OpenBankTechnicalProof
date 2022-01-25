@@ -36,9 +36,8 @@ final class CharactersListRouter: CharactersListRouterInterface {
 extension CharactersListRouter {
     
     func navigateToCharacterDetail(_ character: CharactersListItemViewModel) {
-        // TODO: Remove commented code
         let characterDetailRouter = CharacterDetailRouter()
-
+        
         characterDetailRouter.navigationController = navigationController
         characterDetailRouter.characterId = character.id
         characterDetailRouter.pushOnNavigationController()

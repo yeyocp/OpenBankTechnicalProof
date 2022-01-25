@@ -32,7 +32,7 @@ extension RouterInterface {
     
     // MARK: - CONVENIENCE INIT -
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController? = nil) {
         self.init()
         self.navigationController = navigationController
     }
