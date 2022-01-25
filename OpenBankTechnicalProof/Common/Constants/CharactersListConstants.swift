@@ -22,6 +22,10 @@ struct ServiceConstants {
     static let hash = "thesoer\(ServiceConstants.marvelPrivateKey)\(ServiceConstants.marvelPublicKey)".md5
 }
 
+struct CommonConstants {
+    static let loading = "common.loading".localized()
+}
+
 struct CharactersListConstants {
     static let characters = "characters.title".localized()
     static let rowHeight: CGFloat = 44

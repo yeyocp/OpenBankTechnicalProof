@@ -37,6 +37,7 @@ class CharacterDetailViewController: BaseViewController {
         
         nameLabel.textColor = ColorsConstants.labelMainColor
         nameLabel.font = FontsConstants.systemBold20
+        nameLabel.textAlignment = .center
         descriptionLabel.textColor = ColorsConstants.labelSecondaryColor
         descriptionLabel.font = FontsConstants.systemRegular16
     }

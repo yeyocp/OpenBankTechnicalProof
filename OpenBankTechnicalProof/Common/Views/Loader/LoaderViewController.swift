@@ -12,6 +12,7 @@ class LoaderViewController: UIViewController {
     // MARK: - IBOutlets -
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var loadingLabel: UILabel!
     
     // MARK: - Lifecycle -
     
@@ -22,6 +23,7 @@ class LoaderViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.setupViews()
         self.activityIndicator.startAnimating()
     }
     
@@ -35,6 +37,13 @@ class LoaderViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         view.layoutIfNeeded()
+    }
+    
+    // MARK: - Private Methods -
+    
+    private func setupViews() {
+        self.loadingLabel.text = CommonConstants.loading
+        self.loadingLabel.textColor = ColorsConstants.loadingLabelColor
     }
     
     // MARK: - Public Methods -

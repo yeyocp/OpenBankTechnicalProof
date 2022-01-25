@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoaderViewController" customModule="OpenBankTechnicalProof" customModuleProvider="target">
             <connections>
                 <outlet property="activityIndicator" destination="nlZ-mP-lBI" id="fcS-qo-BPQ"/>
+                <outlet property="loadingLabel" destination="mP6-MA-DEx" id="YsC-1P-evX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,14 +21,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="nlZ-mP-lBI">
-                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                    <rect key="frame" x="188.5" y="389.5" width="37" height="37"/>
                     <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mP6-MA-DEx" userLabel="Loading Label">
+                    <rect key="frame" x="170" y="437.5" width="74.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <constraints>
-                <constraint firstItem="nlZ-mP-lBI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="43h-PQ-dQL"/>
+                <constraint firstItem="mP6-MA-DEx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="28K-U2-OWa"/>
+                <constraint firstItem="nlZ-mP-lBI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-40" id="43h-PQ-dQL"/>
                 <constraint firstItem="nlZ-mP-lBI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KFT-JG-uo5"/>
+                <constraint firstItem="mP6-MA-DEx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aMk-RU-Shz"/>
             </constraints>
             <point key="canvasLocation" x="139" y="80"/>
         </view>

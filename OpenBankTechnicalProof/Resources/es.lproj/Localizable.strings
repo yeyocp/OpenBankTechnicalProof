@@ -13,3 +13,4 @@
 "alert.general.error.button" = "Volver a la pantalla anterior";
 "alert.no.internet.title" = "Sin conexión a internet";
 "navigation.general.back" = "Volver";
+"common.loading" = "Cargando...";

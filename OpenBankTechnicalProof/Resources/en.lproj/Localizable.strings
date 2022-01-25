@@ -13,3 +13,4 @@
 "alert.general.error.button" = "Go back to previous screen";
 "alert.no.internet.title" = "No internet connection";
 "navigation.general.back" = "Back";
+"common.loading" = "Loading...";
