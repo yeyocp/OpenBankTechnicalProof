@@ -60,6 +60,7 @@
 		51C1E7D3279AEE0D00A50FB7 /* CharactersListInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7D2279AEE0D00A50FB7 /* CharactersListInterfaces.swift */; };
 		51C1E7D5279AF0E700A50FB7 /* CharactersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7D4279AF0E700A50FB7 /* CharactersListInteractor.swift */; };
 		51C1E7D7279AF2B700A50FB7 /* CharactersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7D6279AF2B700A50FB7 /* CharactersListPresenter.swift */; };
+		51E5526827A0045500539E22 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51E5526A27A0045500539E22 /* Localizable.strings */; };
 		60C9FDD40550901C797C4013 /* Pods_OpenBankTechnicalProofTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6C46EDC620885800D72BDD /* Pods_OpenBankTechnicalProofTests.framework */; };
 		7B0EC61B60723C78100A619E /* Pods_OpenBankTechnicalProof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E514DC5E8903137A4799127A /* Pods_OpenBankTechnicalProof.framework */; };
 		AD7D266797A488B64C39B266 /* Pods_OpenBankTechnicalProof_OpenBankTechnicalProofUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBDF850D869CEF1D86D4E0E /* Pods_OpenBankTechnicalProof_OpenBankTechnicalProofUITests.framework */; };
@@ -143,6 +144,8 @@
 		51C1E7D2279AEE0D00A50FB7 /* CharactersListInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListInterfaces.swift; sourceTree = "<group>"; };
 		51C1E7D4279AF0E700A50FB7 /* CharactersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListInteractor.swift; sourceTree = "<group>"; };
 		51C1E7D6279AF2B700A50FB7 /* CharactersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListPresenter.swift; sourceTree = "<group>"; };
+		51E5526927A0045500539E22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		51E5526B27A0046400539E22 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		717E6FBF329B49F7264CA50D /* Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests/Pods-OpenBankTechnicalProof-OpenBankTechnicalProofUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7CBDF850D869CEF1D86D4E0E /* Pods_OpenBankTechnicalProof_OpenBankTechnicalProofUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankTechnicalProof_OpenBankTechnicalProofUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E514DC5E8903137A4799127A /* Pods_OpenBankTechnicalProof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankTechnicalProof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -414,6 +417,7 @@
 				51C1E7CC279ADB5900A50FB7 /* Domains */,
 				517D3BAC2799AB0D0054E0B8 /* Modules */,
 				517D3BC02799BF080054E0B8 /* Utils */,
+				51E5526527A003A100539E22 /* Resources */,
 				51A07F5727997B850015EAFB /* Assets.xcassets */,
 				51A07F5C27997B850015EAFB /* Info.plist */,
 				51A07F5927997B850015EAFB /* LaunchScreen.storyboard */,
@@ -476,6 +480,14 @@
 				51C1E7CE279ADBB700A50FB7 /* CharactersDomainModelResponse.swift */,
 			);
 			path = MarvelCharacters;
+			sourceTree = "<group>";
+		};
+		51E5526527A003A100539E22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				51E5526A27A0045500539E22 /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		FEEC29CBE6E8345CF82F1E2D /* Pods */ = {
@@ -583,6 +595,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 51A07F4227997B820015EAFB;
 			productRefGroup = 51A07F4C27997B820015EAFB /* Products */;
@@ -605,6 +618,7 @@
 				51A07F5B27997B850015EAFB /* LaunchScreen.storyboard in Resources */,
 				517D3BBF2799B8790054E0B8 /* GeneralErrorView.xib in Resources */,
 				5177A315279F1B750009D6FA /* CharacterDetailViewController.xib in Resources */,
+				51E5526827A0045500539E22 /* Localizable.strings in Resources */,
 				5177A2E6279E9F170009D6FA /* CharactersListTableViewCell.xib in Resources */,
 				51A07F5827997B850015EAFB /* Assets.xcassets in Resources */,
 				5177A2EC279EA6890009D6FA /* LoaderViewController.xib in Resources */,
@@ -840,6 +854,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		51E5526A27A0045500539E22 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51E5526927A0045500539E22 /* en */,
+				51E5526B27A0046400539E22 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -847,6 +870,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -908,6 +932,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  OpenBankTechnicalProof
+
+  Created by Sergio Castaño Panchuelo on 25/1/22.
+  
+*/
+
+"characters.title" = "Characters";
+"characterDetail.title" = "Detail";
+"alert.general.error.title" = "Oh, wait!";
+"alert.general.error.message" = "It seems that something went wrong... Try again later";
+"alert.general.error.button" = "Go back to previous screen";
+"alert.no.internet.title" = "No internet connection";
+"navigation.general.back" = "Back";
