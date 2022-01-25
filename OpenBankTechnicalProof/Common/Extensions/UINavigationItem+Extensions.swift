@@ -16,7 +16,7 @@ extension UINavigationItem {
         titleLabel.text = title
         titleLabel.font = .systemFont(ofSize: 15, weight: .bold)
         titleLabel.sizeToFit()
-        titleLabel.textColor = .white
+        titleLabel.textColor = ColorsConstants.navigationTextColor
         
         // If in the future it is necessary add more items, add them to the Stack View
         let stackView = UIStackView(arrangedSubviews: [titleLabel])

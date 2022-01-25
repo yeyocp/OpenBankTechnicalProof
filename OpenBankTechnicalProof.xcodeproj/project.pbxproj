@@ -13,6 +13,7 @@
 		5105896B279AC43900B05895 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5105896A279AC43900B05895 /* UIColor+Extensions.swift */; };
 		5105896D279AC57600B05895 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5105896C279AC57600B05895 /* UIViewController+Extensions.swift */; };
 		513AED41279FEB6E001576D3 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513AED40279FEB6E001576D3 /* UIImageView+Extensions.swift */; };
+		516F9F1927A013A800EEE039 /* ColorsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516F9F1827A013A800EEE039 /* ColorsConstants.swift */; };
 		5177A2D5279E88DC0009D6FA /* CharactersListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2D4279E88DC0009D6FA /* CharactersListRouter.swift */; };
 		5177A2D8279E896E0009D6FA /* CharactersListConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2D7279E896E0009D6FA /* CharactersListConstants.swift */; };
 		5177A2DB279E8C840009D6FA /* CharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2D9279E8C830009D6FA /* CharactersListViewController.swift */; };
@@ -93,6 +94,7 @@
 		5105896A279AC43900B05895 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		5105896C279AC57600B05895 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		513AED40279FEB6E001576D3 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		516F9F1827A013A800EEE039 /* ColorsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsConstants.swift; sourceTree = "<group>"; };
 		5177A2D4279E88DC0009D6FA /* CharactersListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListRouter.swift; sourceTree = "<group>"; };
 		5177A2D7279E896E0009D6FA /* CharactersListConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListConstants.swift; sourceTree = "<group>"; };
 		5177A2D9279E8C830009D6FA /* CharactersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				5177A2D7279E896E0009D6FA /* CharactersListConstants.swift */,
+				516F9F1827A013A800EEE039 /* ColorsConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -776,6 +779,7 @@
 				517D3BB72799AE0F0054E0B8 /* InteractorInterface.swift in Sources */,
 				5105896B279AC43900B05895 /* UIColor+Extensions.swift in Sources */,
 				5177A2E1279E9CAB0009D6FA /* CharactersListDataSource.swift in Sources */,
+				516F9F1927A013A800EEE039 /* ColorsConstants.swift in Sources */,
 				5177A302279ECA6B0009D6FA /* String+Extension.swift in Sources */,
 				51058969279ABD6C00B05895 /* UINavigationController+Extensions.swift in Sources */,
 				51C1E7D5279AF0E700A50FB7 /* CharactersListInteractor.swift in Sources */,

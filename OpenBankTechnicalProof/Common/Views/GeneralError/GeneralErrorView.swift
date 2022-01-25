@@ -58,16 +58,16 @@ extension GeneralErrorView: LocalizableProtocol {
 extension GeneralErrorView {
     
     private func setupView() {
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = ColorsConstants.errorBackgroundColor
         errorButton.setTitleColor(.white, for: .normal)
-        errorButton.backgroundColor = #colorLiteral(red: 0.1568627451, green: 0.2274509804, blue: 0.6784313725, alpha: 1)
+        errorButton.backgroundColor = ColorsConstants.mainColor
         errorButton.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
         errorButton.titleLabel?.numberOfLines = 1
         errorButton.titleLabel?.adjustsFontSizeToFitWidth = true
         errorButton.titleLabel?.lineBreakMode = NSLineBreakMode.byClipping
         errorTitle.font = .systemFont(ofSize: 16, weight: .medium)
-        errorTitle.textColor = #colorLiteral(red: 0.1568627451, green: 0.2274509804, blue: 0.6784313725, alpha: 1)
+        errorTitle.textColor = ColorsConstants.mainColor
         errorDescriptionTextView.font = .systemFont(ofSize: 14, weight: .regular)
-        errorDescriptionTextView.textColor = #colorLiteral(red: 0.1882352941, green: 0.1843137255, blue: 0.1843137255, alpha: 1)
+        errorDescriptionTextView.textColor = ColorsConstants.errorDescriptionColor
     }
 }

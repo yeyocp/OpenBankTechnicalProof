@@ -45,7 +45,7 @@ class CharactersListTableViewCell: UITableViewCell {
     // MARK: - Private Methods -
     
     private func initViews() {
-        self.nameLabel.textColor = #colorLiteral(red: 0.1882352941, green: 0.1843137255, blue: 0.1843137255, alpha: 1)
+        self.nameLabel.textColor = ColorsConstants.labelMainColor
         self.nameLabel.font = .systemFont(ofSize: 16, weight: .bold)
     }
     

@@ -26,9 +26,9 @@ class NoInternetController: BaseViewController {
 
     private func setupViews() {
         
-        alertView.backgroundColor = UIColor.white
+        alertView.backgroundColor = ColorsConstants.noInternetBackgroundColor
         titleLabel.text = Constants.noInternetTitleLocalized
-        titleLabel.textColor = UIColor.black
+        titleLabel.textColor = ColorsConstants.noInternetTextColor
         titleLabel.font = .systemFont(ofSize: 14, weight: .regular)
     }
 }

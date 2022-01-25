@@ -47,7 +47,7 @@ class LoaderViewController: UIViewController {
             self.modalPresentationStyle = .overFullScreen
             self.modalTransitionStyle = .crossDissolve
             self.view.layoutIfNeeded()
-            self.view.backgroundColor = .black.withAlphaComponent(0.8)
+            self.view.backgroundColor = ColorsConstants.loaderBackgroundColor
             
             self.activityIndicator.style = .large
             
