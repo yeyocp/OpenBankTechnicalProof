@@ -18,6 +18,7 @@ class CharactersListViewController: BaseViewController {
     var presenter: CharactersListViewDelegateInterface?
     var charactersList: [CharactersListItemViewModel?]?
     var dataSource: CharactersListDataSource?
+    private let refreshControl = UIRefreshControl()
     
     // MARK: - Lifecycle -
 
@@ -27,13 +28,19 @@ class CharactersListViewController: BaseViewController {
         self.registerNib()
         self.initViews()
         
-        self.presenter?.fetchCharactersList()
+        self.presenter?.fetchCharactersList(showLoader: true)
     }
     
     // MARK: - Private Methods -
     
     private func initViews() {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.charactersTableView.refreshControl = self.refreshControl
+        self.refreshControl.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
+    }
+    
+    @objc private func refreshData(_ sender: Any) {
+        presenter?.fetchCharactersList(showLoader: false)
     }
 }
 
@@ -69,6 +76,7 @@ extension CharactersListViewController: CharactersListViewInterface {
         }
         
         self.charactersTableView.reloadData()
+        self.refreshControl.endRefreshing()
     }
 }
 

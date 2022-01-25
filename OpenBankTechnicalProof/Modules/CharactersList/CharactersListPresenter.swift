@@ -30,8 +30,10 @@ extension CharactersListPresenter {
     
     // MARK: - Internal Methods
     
-    func fetchCharactersList() {
-        self.view.showLoader()
+    func fetchCharactersList(showLoader: Bool) {
+        if showLoader {
+            self.view.showLoader()
+        }
         self.interactor?.fetchCharactersList()
     }
     

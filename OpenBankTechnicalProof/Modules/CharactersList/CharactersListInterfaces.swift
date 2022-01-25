@@ -25,7 +25,7 @@ protocol CharactersListViewDelegateInterface: PresenterInterface {
     
     func navigateToCharacterDetail(_ character: CharactersListItemViewModel)
     
-    func fetchCharactersList()
+    func fetchCharactersList(showLoader: Bool)
 }
 
 protocol CharactersListInteractorInterface: InputInteractorInterface {
