@@ -38,18 +38,22 @@ class CharactersListTableViewCell: UITableViewCell {
     // MARK: - Public Methods -
     
     func configure(_ character: CharactersListItemViewModel) {
-        initViews()
-        loadCharacterData(character)
+        self.initViews()
+        self.loadCharacterData(character)
     }
     
     // MARK: - Private Methods -
     
     private func initViews() {
-        nameLabel.textColor = #colorLiteral(red: 0.1882352941, green: 0.1843137255, blue: 0.1843137255, alpha: 1)
-        nameLabel.font = .systemFont(ofSize: 16, weight: .bold)
+        self.nameLabel.textColor = #colorLiteral(red: 0.1882352941, green: 0.1843137255, blue: 0.1843137255, alpha: 1)
+        self.nameLabel.font = .systemFont(ofSize: 16, weight: .bold)
     }
     
     private func loadCharacterData(_ character: CharactersListItemViewModel) {
-        nameLabel.text = character.name
+        if let imageURL = URL(string: "\(character.imageURL).\(character.imageExtension)") {
+            characterImage.load(url: imageURL)
+        }
+        self.nameLabel.text = character.name
+        
     }
 }

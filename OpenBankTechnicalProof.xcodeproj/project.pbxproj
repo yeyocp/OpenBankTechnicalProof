@@ -12,6 +12,7 @@
 		51058969279ABD6C00B05895 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51058968279ABD6C00B05895 /* UINavigationController+Extensions.swift */; };
 		5105896B279AC43900B05895 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5105896A279AC43900B05895 /* UIColor+Extensions.swift */; };
 		5105896D279AC57600B05895 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5105896C279AC57600B05895 /* UIViewController+Extensions.swift */; };
+		513AED41279FEB6E001576D3 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513AED40279FEB6E001576D3 /* UIImageView+Extensions.swift */; };
 		5177A2D5279E88DC0009D6FA /* CharactersListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2D4279E88DC0009D6FA /* CharactersListRouter.swift */; };
 		5177A2D8279E896E0009D6FA /* CharactersListConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2D7279E896E0009D6FA /* CharactersListConstants.swift */; };
 		5177A2DB279E8C840009D6FA /* CharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2D9279E8C830009D6FA /* CharactersListViewController.swift */; };
@@ -90,6 +91,7 @@
 		51058968279ABD6C00B05895 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		5105896A279AC43900B05895 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		5105896C279AC57600B05895 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		513AED40279FEB6E001576D3 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		5177A2D4279E88DC0009D6FA /* CharactersListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListRouter.swift; sourceTree = "<group>"; };
 		5177A2D7279E896E0009D6FA /* CharactersListConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListConstants.swift; sourceTree = "<group>"; };
 		5177A2D9279E8C830009D6FA /* CharactersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewController.swift; sourceTree = "<group>"; };
@@ -377,6 +379,7 @@
 				51058968279ABD6C00B05895 /* UINavigationController+Extensions.swift */,
 				5177A2DD279E92380009D6FA /* UINavigationItem+Extensions.swift */,
 				5105896C279AC57600B05895 /* UIViewController+Extensions.swift */,
+				513AED40279FEB6E001576D3 /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -787,6 +790,7 @@
 				5177A30B279F16650009D6FA /* CharacterDetailInterfaces.swift in Sources */,
 				51C1E7C7279AD13600A50FB7 /* NoInternetController.swift in Sources */,
 				5177A2EF279EAEB20009D6FA /* CharactersManagementService.swift in Sources */,
+				513AED41279FEB6E001576D3 /* UIImageView+Extensions.swift in Sources */,
 				517D3BB02799ADE00054E0B8 /* RouterInterface.swift in Sources */,
 				51C1E7D3279AEE0D00A50FB7 /* CharactersListInterfaces.swift in Sources */,
 				5177A309279F15C10009D6FA /* CharacterDetailViewModel.swift in Sources */,
