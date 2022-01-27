@@ -74,6 +74,8 @@
 		51A891CC27A2A9F8003CFE2E /* CharactersListPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891CB27A2A9F8003CFE2E /* CharactersListPresenterMock.swift */; };
 		51A891CE27A2ADE3003CFE2E /* CharacterDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891CD27A2ADE3003CFE2E /* CharacterDetailViewControllerTests.swift */; };
 		51A891D027A2AEFC003CFE2E /* CharactersListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891CF27A2AEFC003CFE2E /* CharactersListViewControllerTests.swift */; };
+		51A891D327A2B05A003CFE2E /* CharactersListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891D227A2B05A003CFE2E /* CharactersListRouterTests.swift */; };
+		51A891D527A2B116003CFE2E /* CharacterDetailRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891D427A2B116003CFE2E /* CharacterDetailRouterTests.swift */; };
 		51C1E7C6279AD13600A50FB7 /* NoInternetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C1E7C4279AD13600A50FB7 /* NoInternetController.xib */; };
 		51C1E7C7279AD13600A50FB7 /* NoInternetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7C5279AD13600A50FB7 /* NoInternetController.swift */; };
 		51C1E7CB279AD40600A50FB7 /* CharactersListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7CA279AD40600A50FB7 /* CharactersListItemViewModel.swift */; };
@@ -180,6 +182,8 @@
 		51A891CB27A2A9F8003CFE2E /* CharactersListPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListPresenterMock.swift; sourceTree = "<group>"; };
 		51A891CD27A2ADE3003CFE2E /* CharacterDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		51A891CF27A2AEFC003CFE2E /* CharactersListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewControllerTests.swift; sourceTree = "<group>"; };
+		51A891D227A2B05A003CFE2E /* CharactersListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListRouterTests.swift; sourceTree = "<group>"; };
+		51A891D427A2B116003CFE2E /* CharacterDetailRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailRouterTests.swift; sourceTree = "<group>"; };
 		51C1E7C4279AD13600A50FB7 /* NoInternetController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoInternetController.xib; sourceTree = "<group>"; };
 		51C1E7C5279AD13600A50FB7 /* NoInternetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetController.swift; sourceTree = "<group>"; };
 		51C1E7CA279AD40600A50FB7 /* CharactersListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListItemViewModel.swift; sourceTree = "<group>"; };
@@ -515,6 +519,7 @@
 				516AA87227A04A8E008ADEEE /* InteractorTests */,
 				51A891AD27A2A175003CFE2E /* PresenterTests */,
 				51A891C527A2A845003CFE2E /* ViewControllerTests */,
+				51A891D127A2B036003CFE2E /* RouterTests */,
 			);
 			path = OpenBankTechnicalProofTests;
 			sourceTree = "<group>";
@@ -593,6 +598,15 @@
 				51A891C727A2A882003CFE2E /* CharacterDetailPresenterMock.swift */,
 			);
 			path = MockedPresenters;
+			sourceTree = "<group>";
+		};
+		51A891D127A2B036003CFE2E /* RouterTests */ = {
+			isa = PBXGroup;
+			children = (
+				51A891D227A2B05A003CFE2E /* CharactersListRouterTests.swift */,
+				51A891D427A2B116003CFE2E /* CharacterDetailRouterTests.swift */,
+			);
+			path = RouterTests;
 			sourceTree = "<group>";
 		};
 		51C1E7C8279AD37100A50FB7 /* CharactersList */ = {
@@ -983,9 +997,11 @@
 				516AA87727A04CF3008ADEEE /* CharactersListInteractorTest.swift in Sources */,
 				51A891BA27A2A4D0003CFE2E /* CharactersListMockedRouter.swift in Sources */,
 				51A891B827A2A315003CFE2E /* CharacterDetailMockedInterface.swift in Sources */,
+				51A891D527A2B116003CFE2E /* CharacterDetailRouterTests.swift in Sources */,
 				51A891B427A2A1CB003CFE2E /* CharacterDetailMockedInteractor.swift in Sources */,
 				51A891BE27A2A4FB003CFE2E /* BaseMockedRouter.swift in Sources */,
 				516AA87527A04B81008ADEEE /* FakeCharactersListInteractorOutput.swift in Sources */,
+				51A891D327A2B05A003CFE2E /* CharactersListRouterTests.swift in Sources */,
 				51A891CE27A2ADE3003CFE2E /* CharacterDetailViewControllerTests.swift in Sources */,
 				51A891A527A2946C003CFE2E /* CharacterDetailInteractorTest.swift in Sources */,
 				51A891AC27A29778003CFE2E /* CharactersManagementServiceTest.swift in Sources */,
