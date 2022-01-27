@@ -22,7 +22,6 @@ struct CharacterItemDomainModel: Codable, NetworkParser {
     let name: String
     let description: String
     let thumbnail: CharacterItemThumbnail
-    let resourceURI: String
 }
 
 struct CharacterItemThumbnail: Codable, NetworkParser {

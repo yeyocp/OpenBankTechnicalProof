@@ -14,6 +14,10 @@
 		5105896D279AC57600B05895 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5105896C279AC57600B05895 /* UIViewController+Extensions.swift */; };
 		513AED41279FEB6E001576D3 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513AED40279FEB6E001576D3 /* UIImageView+Extensions.swift */; };
 		514D543527A016C6001085E5 /* FontsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D543427A016C6001085E5 /* FontsConstants.swift */; };
+		516AA87527A04B81008ADEEE /* FakeCharactersListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516AA87427A04B81008ADEEE /* FakeCharactersListInteractorOutput.swift */; };
+		516AA87727A04CF3008ADEEE /* CharactersListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516AA87627A04CF3008ADEEE /* CharactersListInteractorTest.swift */; };
+		516AA87927A04D82008ADEEE /* NetworkAPIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516AA87827A04D82008ADEEE /* NetworkAPIClientMock.swift */; };
+		516AA87D27A04E29008ADEEE /* CharactersList.json in Resources */ = {isa = PBXBuildFile; fileRef = 516AA87C27A04E29008ADEEE /* CharactersList.json */; };
 		516F9F1927A013A800EEE039 /* ColorsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516F9F1827A013A800EEE039 /* ColorsConstants.swift */; };
 		5177A2D5279E88DC0009D6FA /* CharactersListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2D4279E88DC0009D6FA /* CharactersListRouter.swift */; };
 		5177A2D8279E896E0009D6FA /* CharactersListConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177A2D7279E896E0009D6FA /* CharactersListConstants.swift */; };
@@ -51,7 +55,6 @@
 		51A07F5127997B820015EAFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A07F5027997B820015EAFB /* SceneDelegate.swift */; };
 		51A07F5827997B850015EAFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51A07F5727997B850015EAFB /* Assets.xcassets */; };
 		51A07F5B27997B850015EAFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A07F5927997B850015EAFB /* LaunchScreen.storyboard */; };
-		51A07F6627997B860015EAFB /* OpenBankTechnicalProofTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A07F6527997B860015EAFB /* OpenBankTechnicalProofTests.swift */; };
 		51A07F7027997B860015EAFB /* OpenBankTechnicalProofUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A07F6F27997B860015EAFB /* OpenBankTechnicalProofUITests.swift */; };
 		51A07F7227997B860015EAFB /* OpenBankTechnicalProofUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A07F7127997B860015EAFB /* OpenBankTechnicalProofUITestsLaunchTests.swift */; };
 		51C1E7C6279AD13600A50FB7 /* NoInternetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C1E7C4279AD13600A50FB7 /* NoInternetController.xib */; };
@@ -96,6 +99,10 @@
 		5105896C279AC57600B05895 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		513AED40279FEB6E001576D3 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		514D543427A016C6001085E5 /* FontsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsConstants.swift; sourceTree = "<group>"; };
+		516AA87427A04B81008ADEEE /* FakeCharactersListInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCharactersListInteractorOutput.swift; sourceTree = "<group>"; };
+		516AA87627A04CF3008ADEEE /* CharactersListInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListInteractorTest.swift; sourceTree = "<group>"; };
+		516AA87827A04D82008ADEEE /* NetworkAPIClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIClientMock.swift; sourceTree = "<group>"; };
+		516AA87C27A04E29008ADEEE /* CharactersList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CharactersList.json; sourceTree = "<group>"; };
 		516F9F1827A013A800EEE039 /* ColorsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsConstants.swift; sourceTree = "<group>"; };
 		5177A2D4279E88DC0009D6FA /* CharactersListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListRouter.swift; sourceTree = "<group>"; };
 		5177A2D7279E896E0009D6FA /* CharactersListConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListConstants.swift; sourceTree = "<group>"; };
@@ -136,7 +143,6 @@
 		51A07F5A27997B850015EAFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51A07F5C27997B850015EAFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51A07F6127997B860015EAFB /* OpenBankTechnicalProofTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenBankTechnicalProofTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		51A07F6527997B860015EAFB /* OpenBankTechnicalProofTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBankTechnicalProofTests.swift; sourceTree = "<group>"; };
 		51A07F6B27997B860015EAFB /* OpenBankTechnicalProofUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenBankTechnicalProofUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A07F6F27997B860015EAFB /* OpenBankTechnicalProofUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBankTechnicalProofUITests.swift; sourceTree = "<group>"; };
 		51A07F7127997B860015EAFB /* OpenBankTechnicalProofUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBankTechnicalProofUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -214,6 +220,39 @@
 			path = NoInternetController;
 			sourceTree = "<group>";
 		};
+		516AA87227A04A8E008ADEEE /* InteractorTests */ = {
+			isa = PBXGroup;
+			children = (
+				516AA87327A04A9E008ADEEE /* FakeInteractorsOutput */,
+				516AA87627A04CF3008ADEEE /* CharactersListInteractorTest.swift */,
+			);
+			path = InteractorTests;
+			sourceTree = "<group>";
+		};
+		516AA87327A04A9E008ADEEE /* FakeInteractorsOutput */ = {
+			isa = PBXGroup;
+			children = (
+				516AA87427A04B81008ADEEE /* FakeCharactersListInteractorOutput.swift */,
+			);
+			path = FakeInteractorsOutput;
+			sourceTree = "<group>";
+		};
+		516AA87A27A04DDB008ADEEE /* Localized */ = {
+			isa = PBXGroup;
+			children = (
+				51E5526A27A0045500539E22 /* Localizable.strings */,
+			);
+			path = Localized;
+			sourceTree = "<group>";
+		};
+		516AA87B27A04DE6008ADEEE /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				516AA87C27A04E29008ADEEE /* CharactersList.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		5177A2D6279E89520009D6FA /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				5177A2FB279EBA550009D6FA /* NetworkAPIClient.swift */,
+				516AA87827A04D82008ADEEE /* NetworkAPIClientMock.swift */,
 				5177A2FD279EC2B80009D6FA /* NetworkManagerBuilder.swift */,
 			);
 			path = DataManagers;
@@ -434,7 +474,7 @@
 		51A07F6427997B860015EAFB /* OpenBankTechnicalProofTests */ = {
 			isa = PBXGroup;
 			children = (
-				51A07F6527997B860015EAFB /* OpenBankTechnicalProofTests.swift */,
+				516AA87227A04A8E008ADEEE /* InteractorTests */,
 			);
 			path = OpenBankTechnicalProofTests;
 			sourceTree = "<group>";
@@ -491,7 +531,8 @@
 		51E5526527A003A100539E22 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				51E5526A27A0045500539E22 /* Localizable.strings */,
+				516AA87B27A04DE6008ADEEE /* JSON */,
+				516AA87A27A04DDB008ADEEE /* Localized */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -586,6 +627,7 @@
 					};
 					51A07F6027997B860015EAFB = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 						TestTargetID = 51A07F4A27997B820015EAFB;
 					};
 					51A07F6A27997B860015EAFB = {
@@ -627,6 +669,7 @@
 				51E5526827A0045500539E22 /* Localizable.strings in Resources */,
 				5177A2E6279E9F170009D6FA /* CharactersListTableViewCell.xib in Resources */,
 				51A07F5827997B850015EAFB /* Assets.xcassets in Resources */,
+				516AA87D27A04E29008ADEEE /* CharactersList.json in Resources */,
 				5177A2EC279EA6890009D6FA /* LoaderViewController.xib in Resources */,
 				51C1E7C6279AD13600A50FB7 /* NoInternetController.xib in Resources */,
 			);
@@ -818,6 +861,7 @@
 				5177A309279F15C10009D6FA /* CharacterDetailViewModel.swift in Sources */,
 				5177A2FE279EC2B80009D6FA /* NetworkManagerBuilder.swift in Sources */,
 				517D3BB52799AE030054E0B8 /* PresenterInterface.swift in Sources */,
+				516AA87927A04D82008ADEEE /* NetworkAPIClientMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,7 +869,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51A07F6627997B860015EAFB /* OpenBankTechnicalProofTests.swift in Sources */,
+				516AA87727A04CF3008ADEEE /* CharactersListInteractorTest.swift in Sources */,
+				516AA87527A04B81008ADEEE /* FakeCharactersListInteractorOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1054,6 +1099,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1067,6 +1113,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yeyocp.OpenBankTechnicalProofTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenBankTechnicalProof.app/OpenBankTechnicalProof";
@@ -1079,6 +1126,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
