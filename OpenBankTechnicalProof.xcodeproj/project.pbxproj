@@ -60,6 +60,7 @@
 		51A891A527A2946C003CFE2E /* CharacterDetailInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891A427A2946C003CFE2E /* CharacterDetailInteractorTest.swift */; };
 		51A891A727A2947C003CFE2E /* FakeCharacterDetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891A627A2947C003CFE2E /* FakeCharacterDetailInteractorOutput.swift */; };
 		51A891A927A29545003CFE2E /* CharacterDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 51A891A827A29544003CFE2E /* CharacterDetail.json */; };
+		51A891AC27A29778003CFE2E /* CharactersManagementServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891AB27A29778003CFE2E /* CharactersManagementServiceTest.swift */; };
 		51C1E7C6279AD13600A50FB7 /* NoInternetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C1E7C4279AD13600A50FB7 /* NoInternetController.xib */; };
 		51C1E7C7279AD13600A50FB7 /* NoInternetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7C5279AD13600A50FB7 /* NoInternetController.swift */; };
 		51C1E7CB279AD40600A50FB7 /* CharactersListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7CA279AD40600A50FB7 /* CharactersListItemViewModel.swift */; };
@@ -152,6 +153,7 @@
 		51A891A427A2946C003CFE2E /* CharacterDetailInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailInteractorTest.swift; sourceTree = "<group>"; };
 		51A891A627A2947C003CFE2E /* FakeCharacterDetailInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCharacterDetailInteractorOutput.swift; sourceTree = "<group>"; };
 		51A891A827A29544003CFE2E /* CharacterDetail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CharacterDetail.json; sourceTree = "<group>"; };
+		51A891AB27A29778003CFE2E /* CharactersManagementServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersManagementServiceTest.swift; sourceTree = "<group>"; };
 		51C1E7C4279AD13600A50FB7 /* NoInternetController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoInternetController.xib; sourceTree = "<group>"; };
 		51C1E7C5279AD13600A50FB7 /* NoInternetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetController.swift; sourceTree = "<group>"; };
 		51C1E7CA279AD40600A50FB7 /* CharactersListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListItemViewModel.swift; sourceTree = "<group>"; };
@@ -483,6 +485,7 @@
 		51A07F6427997B860015EAFB /* OpenBankTechnicalProofTests */ = {
 			isa = PBXGroup;
 			children = (
+				51A891AA27A2975C003CFE2E /* ManagementServiceTests */,
 				516AA87227A04A8E008ADEEE /* InteractorTests */,
 			);
 			path = OpenBankTechnicalProofTests;
@@ -495,6 +498,14 @@
 				51A07F7127997B860015EAFB /* OpenBankTechnicalProofUITestsLaunchTests.swift */,
 			);
 			path = OpenBankTechnicalProofUITests;
+			sourceTree = "<group>";
+		};
+		51A891AA27A2975C003CFE2E /* ManagementServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				51A891AB27A29778003CFE2E /* CharactersManagementServiceTest.swift */,
+			);
+			path = ManagementServiceTests;
 			sourceTree = "<group>";
 		};
 		51C1E7C8279AD37100A50FB7 /* CharactersList */ = {
@@ -882,6 +893,7 @@
 				516AA87727A04CF3008ADEEE /* CharactersListInteractorTest.swift in Sources */,
 				516AA87527A04B81008ADEEE /* FakeCharactersListInteractorOutput.swift in Sources */,
 				51A891A527A2946C003CFE2E /* CharacterDetailInteractorTest.swift in Sources */,
+				51A891AC27A29778003CFE2E /* CharactersManagementServiceTest.swift in Sources */,
 				51A891A727A2947C003CFE2E /* FakeCharacterDetailInteractorOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
