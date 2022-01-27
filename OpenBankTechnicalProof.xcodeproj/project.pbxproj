@@ -70,6 +70,10 @@
 		51A891C027A2A663003CFE2E /* CharactersListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891BF27A2A663003CFE2E /* CharactersListPresenterTests.swift */; };
 		51A891C227A2A729003CFE2E /* CharacterDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891C127A2A729003CFE2E /* CharacterDetailPresenterTests.swift */; };
 		51A891C427A2A77F003CFE2E /* CharacterDetailMockedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891C327A2A77F003CFE2E /* CharacterDetailMockedRouter.swift */; };
+		51A891C827A2A882003CFE2E /* CharacterDetailPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891C727A2A882003CFE2E /* CharacterDetailPresenterMock.swift */; };
+		51A891CC27A2A9F8003CFE2E /* CharactersListPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891CB27A2A9F8003CFE2E /* CharactersListPresenterMock.swift */; };
+		51A891CE27A2ADE3003CFE2E /* CharacterDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891CD27A2ADE3003CFE2E /* CharacterDetailViewControllerTests.swift */; };
+		51A891D027A2AEFC003CFE2E /* CharactersListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891CF27A2AEFC003CFE2E /* CharactersListViewControllerTests.swift */; };
 		51C1E7C6279AD13600A50FB7 /* NoInternetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C1E7C4279AD13600A50FB7 /* NoInternetController.xib */; };
 		51C1E7C7279AD13600A50FB7 /* NoInternetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7C5279AD13600A50FB7 /* NoInternetController.swift */; };
 		51C1E7CB279AD40600A50FB7 /* CharactersListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7CA279AD40600A50FB7 /* CharactersListItemViewModel.swift */; };
@@ -172,6 +176,10 @@
 		51A891BF27A2A663003CFE2E /* CharactersListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListPresenterTests.swift; sourceTree = "<group>"; };
 		51A891C127A2A729003CFE2E /* CharacterDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenterTests.swift; sourceTree = "<group>"; };
 		51A891C327A2A77F003CFE2E /* CharacterDetailMockedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailMockedRouter.swift; sourceTree = "<group>"; };
+		51A891C727A2A882003CFE2E /* CharacterDetailPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenterMock.swift; sourceTree = "<group>"; };
+		51A891CB27A2A9F8003CFE2E /* CharactersListPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListPresenterMock.swift; sourceTree = "<group>"; };
+		51A891CD27A2ADE3003CFE2E /* CharacterDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		51A891CF27A2AEFC003CFE2E /* CharactersListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewControllerTests.swift; sourceTree = "<group>"; };
 		51C1E7C4279AD13600A50FB7 /* NoInternetController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoInternetController.xib; sourceTree = "<group>"; };
 		51C1E7C5279AD13600A50FB7 /* NoInternetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetController.swift; sourceTree = "<group>"; };
 		51C1E7CA279AD40600A50FB7 /* CharactersListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListItemViewModel.swift; sourceTree = "<group>"; };
@@ -506,6 +514,7 @@
 				51A891AA27A2975C003CFE2E /* ManagementServiceTests */,
 				516AA87227A04A8E008ADEEE /* InteractorTests */,
 				51A891AD27A2A175003CFE2E /* PresenterTests */,
+				51A891C527A2A845003CFE2E /* ViewControllerTests */,
 			);
 			path = OpenBankTechnicalProofTests;
 			sourceTree = "<group>";
@@ -565,6 +574,25 @@
 				51A891C327A2A77F003CFE2E /* CharacterDetailMockedRouter.swift */,
 			);
 			path = MockedRouters;
+			sourceTree = "<group>";
+		};
+		51A891C527A2A845003CFE2E /* ViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				51A891C627A2A85F003CFE2E /* MockedPresenters */,
+				51A891CF27A2AEFC003CFE2E /* CharactersListViewControllerTests.swift */,
+				51A891CD27A2ADE3003CFE2E /* CharacterDetailViewControllerTests.swift */,
+			);
+			path = ViewControllerTests;
+			sourceTree = "<group>";
+		};
+		51A891C627A2A85F003CFE2E /* MockedPresenters */ = {
+			isa = PBXGroup;
+			children = (
+				51A891CB27A2A9F8003CFE2E /* CharactersListPresenterMock.swift */,
+				51A891C727A2A882003CFE2E /* CharacterDetailPresenterMock.swift */,
+			);
+			path = MockedPresenters;
 			sourceTree = "<group>";
 		};
 		51C1E7C8279AD37100A50FB7 /* CharactersList */ = {
@@ -951,17 +979,21 @@
 			files = (
 				51A891C427A2A77F003CFE2E /* CharacterDetailMockedRouter.swift in Sources */,
 				51A891C027A2A663003CFE2E /* CharactersListPresenterTests.swift in Sources */,
+				51A891C827A2A882003CFE2E /* CharacterDetailPresenterMock.swift in Sources */,
 				516AA87727A04CF3008ADEEE /* CharactersListInteractorTest.swift in Sources */,
 				51A891BA27A2A4D0003CFE2E /* CharactersListMockedRouter.swift in Sources */,
 				51A891B827A2A315003CFE2E /* CharacterDetailMockedInterface.swift in Sources */,
 				51A891B427A2A1CB003CFE2E /* CharacterDetailMockedInteractor.swift in Sources */,
 				51A891BE27A2A4FB003CFE2E /* BaseMockedRouter.swift in Sources */,
 				516AA87527A04B81008ADEEE /* FakeCharactersListInteractorOutput.swift in Sources */,
+				51A891CE27A2ADE3003CFE2E /* CharacterDetailViewControllerTests.swift in Sources */,
 				51A891A527A2946C003CFE2E /* CharacterDetailInteractorTest.swift in Sources */,
 				51A891AC27A29778003CFE2E /* CharactersManagementServiceTest.swift in Sources */,
 				51A891C227A2A729003CFE2E /* CharacterDetailPresenterTests.swift in Sources */,
 				51A891A727A2947C003CFE2E /* FakeCharacterDetailInteractorOutput.swift in Sources */,
+				51A891D027A2AEFC003CFE2E /* CharactersListViewControllerTests.swift in Sources */,
 				51A891B627A2A30B003CFE2E /* CharactersListMockedInterface.swift in Sources */,
+				51A891CC27A2A9F8003CFE2E /* CharactersListPresenterMock.swift in Sources */,
 				51A891B227A2A1C1003CFE2E /* CharactersListMockedInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
