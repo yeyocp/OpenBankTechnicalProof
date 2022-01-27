@@ -61,6 +61,15 @@
 		51A891A727A2947C003CFE2E /* FakeCharacterDetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891A627A2947C003CFE2E /* FakeCharacterDetailInteractorOutput.swift */; };
 		51A891A927A29545003CFE2E /* CharacterDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 51A891A827A29544003CFE2E /* CharacterDetail.json */; };
 		51A891AC27A29778003CFE2E /* CharactersManagementServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891AB27A29778003CFE2E /* CharactersManagementServiceTest.swift */; };
+		51A891B227A2A1C1003CFE2E /* CharactersListMockedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891B127A2A1C1003CFE2E /* CharactersListMockedInteractor.swift */; };
+		51A891B427A2A1CB003CFE2E /* CharacterDetailMockedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891B327A2A1CB003CFE2E /* CharacterDetailMockedInteractor.swift */; };
+		51A891B627A2A30B003CFE2E /* CharactersListMockedInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891B527A2A30B003CFE2E /* CharactersListMockedInterface.swift */; };
+		51A891B827A2A315003CFE2E /* CharacterDetailMockedInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891B727A2A315003CFE2E /* CharacterDetailMockedInterface.swift */; };
+		51A891BA27A2A4D0003CFE2E /* CharactersListMockedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891B927A2A4D0003CFE2E /* CharactersListMockedRouter.swift */; };
+		51A891BE27A2A4FB003CFE2E /* BaseMockedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891BD27A2A4FB003CFE2E /* BaseMockedRouter.swift */; };
+		51A891C027A2A663003CFE2E /* CharactersListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891BF27A2A663003CFE2E /* CharactersListPresenterTests.swift */; };
+		51A891C227A2A729003CFE2E /* CharacterDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891C127A2A729003CFE2E /* CharacterDetailPresenterTests.swift */; };
+		51A891C427A2A77F003CFE2E /* CharacterDetailMockedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A891C327A2A77F003CFE2E /* CharacterDetailMockedRouter.swift */; };
 		51C1E7C6279AD13600A50FB7 /* NoInternetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C1E7C4279AD13600A50FB7 /* NoInternetController.xib */; };
 		51C1E7C7279AD13600A50FB7 /* NoInternetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7C5279AD13600A50FB7 /* NoInternetController.swift */; };
 		51C1E7CB279AD40600A50FB7 /* CharactersListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1E7CA279AD40600A50FB7 /* CharactersListItemViewModel.swift */; };
@@ -154,6 +163,15 @@
 		51A891A627A2947C003CFE2E /* FakeCharacterDetailInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCharacterDetailInteractorOutput.swift; sourceTree = "<group>"; };
 		51A891A827A29544003CFE2E /* CharacterDetail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CharacterDetail.json; sourceTree = "<group>"; };
 		51A891AB27A29778003CFE2E /* CharactersManagementServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersManagementServiceTest.swift; sourceTree = "<group>"; };
+		51A891B127A2A1C1003CFE2E /* CharactersListMockedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListMockedInteractor.swift; sourceTree = "<group>"; };
+		51A891B327A2A1CB003CFE2E /* CharacterDetailMockedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailMockedInteractor.swift; sourceTree = "<group>"; };
+		51A891B527A2A30B003CFE2E /* CharactersListMockedInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListMockedInterface.swift; sourceTree = "<group>"; };
+		51A891B727A2A315003CFE2E /* CharacterDetailMockedInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailMockedInterface.swift; sourceTree = "<group>"; };
+		51A891B927A2A4D0003CFE2E /* CharactersListMockedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListMockedRouter.swift; sourceTree = "<group>"; };
+		51A891BD27A2A4FB003CFE2E /* BaseMockedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMockedRouter.swift; sourceTree = "<group>"; };
+		51A891BF27A2A663003CFE2E /* CharactersListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListPresenterTests.swift; sourceTree = "<group>"; };
+		51A891C127A2A729003CFE2E /* CharacterDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenterTests.swift; sourceTree = "<group>"; };
+		51A891C327A2A77F003CFE2E /* CharacterDetailMockedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailMockedRouter.swift; sourceTree = "<group>"; };
 		51C1E7C4279AD13600A50FB7 /* NoInternetController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoInternetController.xib; sourceTree = "<group>"; };
 		51C1E7C5279AD13600A50FB7 /* NoInternetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetController.swift; sourceTree = "<group>"; };
 		51C1E7CA279AD40600A50FB7 /* CharactersListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListItemViewModel.swift; sourceTree = "<group>"; };
@@ -487,6 +505,7 @@
 			children = (
 				51A891AA27A2975C003CFE2E /* ManagementServiceTests */,
 				516AA87227A04A8E008ADEEE /* InteractorTests */,
+				51A891AD27A2A175003CFE2E /* PresenterTests */,
 			);
 			path = OpenBankTechnicalProofTests;
 			sourceTree = "<group>";
@@ -506,6 +525,46 @@
 				51A891AB27A29778003CFE2E /* CharactersManagementServiceTest.swift */,
 			);
 			path = ManagementServiceTests;
+			sourceTree = "<group>";
+		};
+		51A891AD27A2A175003CFE2E /* PresenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				51A891AE27A2A188003CFE2E /* MockedInteractors */,
+				51A891AF27A2A18F003CFE2E /* MockedInterfaces */,
+				51A891B027A2A199003CFE2E /* MockedRouters */,
+				51A891BF27A2A663003CFE2E /* CharactersListPresenterTests.swift */,
+				51A891C127A2A729003CFE2E /* CharacterDetailPresenterTests.swift */,
+			);
+			path = PresenterTests;
+			sourceTree = "<group>";
+		};
+		51A891AE27A2A188003CFE2E /* MockedInteractors */ = {
+			isa = PBXGroup;
+			children = (
+				51A891B127A2A1C1003CFE2E /* CharactersListMockedInteractor.swift */,
+				51A891B327A2A1CB003CFE2E /* CharacterDetailMockedInteractor.swift */,
+			);
+			path = MockedInteractors;
+			sourceTree = "<group>";
+		};
+		51A891AF27A2A18F003CFE2E /* MockedInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				51A891B527A2A30B003CFE2E /* CharactersListMockedInterface.swift */,
+				51A891B727A2A315003CFE2E /* CharacterDetailMockedInterface.swift */,
+			);
+			path = MockedInterfaces;
+			sourceTree = "<group>";
+		};
+		51A891B027A2A199003CFE2E /* MockedRouters */ = {
+			isa = PBXGroup;
+			children = (
+				51A891BD27A2A4FB003CFE2E /* BaseMockedRouter.swift */,
+				51A891B927A2A4D0003CFE2E /* CharactersListMockedRouter.swift */,
+				51A891C327A2A77F003CFE2E /* CharacterDetailMockedRouter.swift */,
+			);
+			path = MockedRouters;
 			sourceTree = "<group>";
 		};
 		51C1E7C8279AD37100A50FB7 /* CharactersList */ = {
@@ -890,11 +949,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A891C427A2A77F003CFE2E /* CharacterDetailMockedRouter.swift in Sources */,
+				51A891C027A2A663003CFE2E /* CharactersListPresenterTests.swift in Sources */,
 				516AA87727A04CF3008ADEEE /* CharactersListInteractorTest.swift in Sources */,
+				51A891BA27A2A4D0003CFE2E /* CharactersListMockedRouter.swift in Sources */,
+				51A891B827A2A315003CFE2E /* CharacterDetailMockedInterface.swift in Sources */,
+				51A891B427A2A1CB003CFE2E /* CharacterDetailMockedInteractor.swift in Sources */,
+				51A891BE27A2A4FB003CFE2E /* BaseMockedRouter.swift in Sources */,
 				516AA87527A04B81008ADEEE /* FakeCharactersListInteractorOutput.swift in Sources */,
 				51A891A527A2946C003CFE2E /* CharacterDetailInteractorTest.swift in Sources */,
 				51A891AC27A29778003CFE2E /* CharactersManagementServiceTest.swift in Sources */,
+				51A891C227A2A729003CFE2E /* CharacterDetailPresenterTests.swift in Sources */,
 				51A891A727A2947C003CFE2E /* FakeCharacterDetailInteractorOutput.swift in Sources */,
+				51A891B627A2A30B003CFE2E /* CharactersListMockedInterface.swift in Sources */,
+				51A891B227A2A1C1003CFE2E /* CharactersListMockedInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
