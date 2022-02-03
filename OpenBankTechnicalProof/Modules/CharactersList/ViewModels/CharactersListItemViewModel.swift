@@ -5,21 +5,25 @@
 //  Created by Sergio Castaño Panchuelo on 21/1/22.
 //
 
-import Foundation
+import UIKit
 
-struct CharactersListItemViewModel {
-    var id: Int
-    var name: String
-    var imageURL: String
-    var imageExtension: String
+class CharactersListItemViewModel {
+    let id: Int
+    let name: String
+    let url: URL?
+    var image = UIImage(named: "Placeholder")
+    var state = PhotoRecordState.new
+//    var imageURL: String
+//    var imageExtension: String
     
     // MARK: - Init -
     
     init(characterItemDomainModel: CharacterItemDomainModel) {
         self.id = characterItemDomainModel.id
         self.name = characterItemDomainModel.name
-        self.imageURL = characterItemDomainModel.thumbnail.imageURL
-        self.imageExtension = characterItemDomainModel.thumbnail.imageExtension
+        self.url = URL(string: "\(characterItemDomainModel.thumbnail.imageURL).\(characterItemDomainModel.thumbnail.imageExtension)")
+//        self.imageURL = characterItemDomainModel.thumbnail.imageURL
+//        self.imageExtension = characterItemDomainModel.thumbnail.imageExtension
     }
 }
 

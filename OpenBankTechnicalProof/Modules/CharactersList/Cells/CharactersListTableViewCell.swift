@@ -50,9 +50,9 @@ class CharactersListTableViewCell: UITableViewCell {
     }
     
     private func loadCharacterData(_ character: CharactersListItemViewModel) {
-        if let imageURL = URL(string: "\(character.imageURL).\(character.imageExtension)") {
-            characterImage.load(url: imageURL)
-        }
+//        if let imageURL = URL(string: "\(character.imageURL).\(character.imageExtension)") {
+//            characterImage.load(url: imageURL)
+//        }
         self.nameLabel.text = character.name
         
     }
