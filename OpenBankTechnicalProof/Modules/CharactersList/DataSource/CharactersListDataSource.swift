@@ -59,9 +59,9 @@ extension CharactersListDataSource: UITableViewDataSource {
             
             switch character.imageState {
             case.new:
-                if !tableView.isDragging && !tableView.isDecelerating {
-                    self.presenter?.fetchCharacterImage(url: character.url, indexPath: indexPath)
-                }
+                //if !tableView.isDragging && !tableView.isDecelerating {
+                self.presenter?.fetchCharacterImage(url: character.url, indexPath: indexPath)
+                //}
             default:
                 break
             }

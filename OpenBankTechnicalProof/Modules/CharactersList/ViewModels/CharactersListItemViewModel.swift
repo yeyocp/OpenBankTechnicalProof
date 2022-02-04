@@ -22,8 +22,6 @@ class CharactersListItemViewModel {
         self.id = characterItemDomainModel.id
         self.name = characterItemDomainModel.name
         self.url = URL(string: "\(characterItemDomainModel.thumbnail.imageURL).\(characterItemDomainModel.thumbnail.imageExtension)")
-//        self.imageURL = characterItemDomainModel.thumbnail.imageURL
-//        self.imageExtension = characterItemDomainModel.thumbnail.imageExtension
     }
 }
 
