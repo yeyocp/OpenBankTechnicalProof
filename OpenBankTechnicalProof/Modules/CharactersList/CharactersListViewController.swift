@@ -57,6 +57,7 @@ extension CharactersListViewController {
         if let charactersList = self.charactersList {
             dataSource = CharactersListDataSource(tableView: self.charactersTableView, characters: charactersList)
             dataSource?.delegate = self
+            dataSource?.presenter = self.presenter
             charactersTableView.delegate = dataSource
             charactersTableView.dataSource = dataSource
             charactersTableView.reloadData()
@@ -77,6 +78,22 @@ extension CharactersListViewController: CharactersListViewInterface {
         
         self.charactersTableView.reloadData()
         self.refreshControl.endRefreshing()
+    }
+    
+    func didCharacterImageDownloaded(data: Data, indexPath: IndexPath) {
+        if let character = self.charactersList?[indexPath.row] {
+            character.image = UIImage(data: data)
+            character.imageState = .downloaded
+            self.dataSource?.tableView.reloadRows(at: [indexPath], with: .fade)
+        }
+    }
+    
+    func didCharacterImageFailed(indexPath: IndexPath) {
+        if let character = self.charactersList?[indexPath.row] {
+            character.image = UIImage(named: "Failed")
+            character.imageState = .failed
+            self.dataSource?.tableView.reloadRows(at: [indexPath], with: .fade)
+        }
     }
 }
 

@@ -12,7 +12,7 @@ class CharactersListItemViewModel {
     let name: String
     let url: URL?
     var image = UIImage(named: "Placeholder")
-    var state = PhotoRecordState.new
+    var imageState = CharacterImageState.new
 //    var imageURL: String
 //    var imageExtension: String
     

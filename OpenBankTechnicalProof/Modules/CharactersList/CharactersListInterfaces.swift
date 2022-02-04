@@ -16,6 +16,8 @@ protocol CharactersListViewInterface: ViewInterface {
     var charactersList: [CharactersListItemViewModel?]? { get }
     
     func didCharactersFinish(_ charactersViewModel: [CharactersListItemViewModel?])
+    func didCharacterImageDownloaded(data: Data, indexPath: IndexPath)
+    func didCharacterImageFailed(indexPath: IndexPath)
 }
 
 protocol CharactersListViewDelegateInterface: PresenterInterface {
@@ -26,6 +28,7 @@ protocol CharactersListViewDelegateInterface: PresenterInterface {
     func navigateToCharacterDetail(_ character: CharactersListItemViewModel)
     
     func fetchCharactersList(showLoader: Bool)
+    func fetchCharacterImage(url: URL?, indexPath: IndexPath)
 }
 
 protocol CharactersListInteractorInterface: InputInteractorInterface {
@@ -33,9 +36,13 @@ protocol CharactersListInteractorInterface: InputInteractorInterface {
     var charactersManagementService: CharactersManagementService { get }
     
     func fetchCharactersList()
+    func fetchCharacterImage(url: URL?, indexPath: IndexPath)
 }
 
 protocol CharactersListOutputInteractorInterface: OutputInteractorInterface {
     func onCharactersListSucceed(charactersListDomain: [CharacterItemDomainModel])
     func onCharactersListFailed()
+    
+    func onCharacterImageSucceed(imageData: Data, indexPath: IndexPath)
+    func onCharacterImageFailed(indexPath: IndexPath)
 }

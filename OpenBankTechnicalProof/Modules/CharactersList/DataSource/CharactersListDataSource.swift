@@ -20,6 +20,8 @@ final class CharactersListDataSource: NSObject {
     var characters: [CharactersListItemViewModel?] = []
     weak var delegate: CharactersListDataSourceDelegate?
     
+    let pendingOperations = PendingOperations()
+    
     // MARK: - Init -
     
     init(tableView: UITableView, characters: [CharactersListItemViewModel?]) {
@@ -54,6 +56,15 @@ extension CharactersListDataSource: UITableViewDataSource {
             cell.selectionStyle = .none
             cell.configure(character)
             tableViewCell = cell
+            
+            switch character.imageState {
+            case.new:
+                if !tableView.isDragging && !tableView.isDecelerating {
+                    self.presenter?.fetchCharacterImage(url: character.url, indexPath: indexPath)
+                }
+            default:
+                break
+            }
         }
         
         return tableViewCell

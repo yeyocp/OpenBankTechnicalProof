@@ -8,8 +8,8 @@
 import UIKit
 
 // This enum contains all the possible states a photo record can be in
-enum PhotoRecordState {
-    case new, downloaded, filtered, failed
+enum CharacterImageState {
+    case new, downloaded, failed
 }
 
 class PendingOperations {
@@ -25,10 +25,11 @@ class PendingOperations {
 }
 
 class ImageDownloader: Operation {
-    let characterRecord: CharactersListItemViewModel
+    let characterImageURL: URL?
+    var result: Result<Data> = .failure(APIErrorType.generalServiceError, nil)
     
-    init(_ characterRecord: CharactersListItemViewModel) {
-        self.characterRecord = characterRecord
+    init(_ characterImageURL: URL?) {
+        self.characterImageURL = characterImageURL
     }
     
     override func main() {
@@ -36,8 +37,7 @@ class ImageDownloader: Operation {
             return
         }
         
-        guard let url = characterRecord.url,
-              let imageData = try? Data(contentsOf: url) else {
+        guard let url = characterImageURL, let imageData = try? Data(contentsOf: url) else {
             return
         }
         
@@ -46,11 +46,9 @@ class ImageDownloader: Operation {
         }
         
         if !imageData.isEmpty {
-            characterRecord.image = UIImage(data: imageData)
-            characterRecord.state = .downloaded
+            result = .success(imageData)
         } else {
-            characterRecord.state = .failed
-            characterRecord.image = UIImage(named: "Failed")
+            result = .failure(APIErrorType.badRequestError, nil)
         }
     }
 }

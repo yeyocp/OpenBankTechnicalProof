@@ -37,6 +37,10 @@ extension CharactersListPresenter {
         self.interactor?.fetchCharactersList()
     }
     
+    func fetchCharacterImage(url: URL?, indexPath: IndexPath) {
+        self.interactor?.fetchCharacterImage(url: url, indexPath: indexPath)
+    }
+    
     func navigateToCharacterDetail(_ character: CharactersListItemViewModel) {
         self.router.navigateToCharacterDetail(character)
     }
@@ -59,6 +63,18 @@ extension CharactersListPresenter: CharactersListOutputInteractorInterface {
             self.view.hideLoader {
                 self.router.showGeneralErrorScreen(shouldReturn: true)
             }
+        }
+    }
+    
+    func onCharacterImageSucceed(imageData: Data, indexPath: IndexPath) {
+        DispatchQueue.main.async {
+            self.view.didCharacterImageDownloaded(data: imageData, indexPath: indexPath)
+        }
+    }
+    
+    func onCharacterImageFailed(indexPath: IndexPath) {
+        DispatchQueue.main.async {
+            self.view.didCharacterImageFailed(indexPath: indexPath)
         }
     }
 }
